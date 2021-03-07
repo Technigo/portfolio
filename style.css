@@ -1,0 +1,273 @@
+:root {
+  --primary: #5661B8;
+  --secondary: #efeff2;
+}
+
+body {
+  margin: auto 0;
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* HERO SECTION */
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img {
+  object-fit: cover;
+  width: 100vw;
+  height: 50vh;
+}
+
+.hero-title {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* INTRO SECTION */
+
+.intro {
+  background-color: #858DCC;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro h2 {
+  font-size: 18px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.intro-pic {
+  border-radius: 50%;
+  height: auto;
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+/* PROJECT SECTION */
+
+.section-titles {
+  width: 60%; 
+  text-align: center; 
+  border-bottom: 3px solid var(--primary); 
+  line-height: 0.1em;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.section-titles span {
+  background:var(--secondary); 
+  padding:0 10px; 
+}
+
+.project-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 40px 50px;
+}
+
+.project-item {
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-description {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--primary);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  transition: opacity .2s, visibility .2s;
+}
+
+.project-item:hover .project-description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project-item:focus .project-description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project-img {
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.tags {
+  display: flex;
+  position: absolute;
+  left: 2%;
+  bottom: 0%;
+}
+
+.tag {
+  background-color: var(--primary);
+  padding: 3px;
+  margin-right: 3px;
+  color: white;
+  font-size: 12px;
+}
+
+.project-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: white;
+  font-size: 30px;
+  text-shadow: 1px 3px 1px var(--primary);
+}
+
+.project-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.project-links span {
+  font-size: 30px;
+}
+
+/* STACK SECTION */
+
+.stack {
+  text-align: center;
+}
+
+.stack-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.stack-container p {
+  margin-right: 15px;
+}
+
+/* FOOTER */
+
+.footer {
+  height: 100px;
+  background-color: #858DCC;
+  margin-top: 50px;
+}
+
+/* TABLET RESPONSIVE */
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  
+  .hero-title {
+    font-size: 40px;
+    padding: 0;
+  }
+
+  .hero-img {
+    height: 70vh;
+  }
+
+  .intro {
+    padding: 50px 100px;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .intro h2 {
+    font-size: 24px;
+    text-align: left;
+  }
+  
+  .intro-pic {
+    width: 150px;
+    margin-right: 15px;
+  }
+
+  .section-titles {
+    width: 40%; 
+  }
+
+
+}
+
+/* DESKTOP RESPONSIVE */
+
+@media (min-width: 1025px) {
+
+  .hero-title {
+    font-size: 50px;
+    padding: 0;
+  }
+
+  .hero-img {
+    height: 70vh;
+  }
+
+  .intro {
+    padding: 50px 100px;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .intro h2 {
+    font-size: 24px;
+    text-align: left;
+  }
+  
+  .intro-pic {
+    width: 150px;
+    margin-right: 15px;
+  }
+
+  .section-titles {
+    width: 40%; 
+  }
+
+
+}
