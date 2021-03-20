@@ -1,0 +1,519 @@
+
+/*****STANDARD SECTIONS THAT APPLY TO MORE THAN ONE HTML ELEMENT*****/
+body{
+    margin: 0;
+    font-size: 17px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.highlight{
+    color: #FF484C;
+    font-weight: 700;
+}
+
+.highlight:hover{
+    opacity: 0.5;
+}
+
+/*******STANDARD SECTION FOR SUMMARY, TECH AND MORE SECTION*****/
+.standard-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height:29px;
+    font-size:17px;
+}
+
+/*******HEAD-LINES FOR THE TWO DIFFERENT HEADERS******/
+.highlighted-headline{
+    text-align: center;
+    Font-family:  'Montserrat', sans-serif;
+    Font-size: 25px;
+    font-weight: 700;
+    background: #FF484C;
+    color: white;
+    padding: 15px;
+    height: 28px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.standard-headline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    Font-family:  'Montserrat', sans-serif;
+    Font-size: 25px;
+    font-weight: 700;
+    color: #FF484C;
+    padding: 15px;
+    height: 26px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+/**********STANDARD PROJECT SECTION FOR MY PROJECTS AND MY THOUGHTS****/
+.standard-projects-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;;
+}
+
+.standard-projects-container{
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    justify-items: center;
+    margin: 15px;
+}
+
+.other-projects-section-standard{
+    display: flex;
+    flex-direction: column;
+    font-family: roboto;
+}
+
+.other-projects-container-standard{
+    display: flex;
+    align-items: flex-start;;
+    flex-direction: column;
+    margin: 0px 20px 30px 20px;
+}
+
+/*******GENERAL PROJECT CARD ELEMENTS******/
+.project-card{
+    width: 350px;
+    margin-bottom: 40px 15px;
+}
+
+.project-card-title{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1%;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.project-card-paragraph{
+    margin-top:0;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1%;
+    line-height: 25px;
+    font-size: 17px;
+}
+
+.picture {
+    width: 100%;
+    height: 212px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.picture:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.another-project-card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.another-project-card p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1%;
+    line-height: 25px;
+    font-size: 17px;
+}
+
+/******************************************
+FROM TOP  OF WEB PAGE NOT GENERAL  CODE BEGINS HERE
+*******************************************/
+
+/*****TOP SECTION*****/
+header{
+    position: relative; 
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    background-image: url(./assets/grafic.png);
+    background-size: cover;
+}
+
+.top-media-links{
+    display: flex;
+    position: absolute; 
+    top: 15%;
+    right: 15%;
+}
+
+.border-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid white;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 100%;
+    transition: opacity 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.border-top:hover{
+    opacity: 0.5;
+}
+
+.top-name-description{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 27%;
+    left: 15%;
+    color: white;
+}
+
+.full-name{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.full-name h2{
+    font-weight: 400;   
+}
+
+.full-name span{
+    font-weight: 700;
+    margin: 0;
+}
+.job-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.job-title h2{
+    margin-top:0;
+    margin-bottom:10px;
+}
+
+.top-profile-picture{
+    display: flex;
+    position: absolute;
+    top: 75%;
+    right: 10%;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: solid 2px #ffff;
+}
+
+/******SUMMARY SECTION******/
+.summary-container{
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
+
+}
+
+.start-image{
+    width: 55px;
+    height: 11px;
+    color: white;
+}
+
+.line {
+    display: inline-block;
+    width: 70px;
+    height: 3px;
+    background-color: #FF484C;
+    margin-bottom: 8px;
+}
+  
+  .circle {
+    display: inline-block;
+    background-color: #FF484C;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: -10px;
+}   
+/******TECH SECTION*******/
+.teach-headline{
+    margin: 0;
+}
+.tech-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center; 
+    background-color: #f8f1f1;
+}
+
+.tech-description{
+    margin: 0px 20px 10px 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+/*****FEATURED PROJECTS*****/
+
+.container-overlay{
+    position: relative;
+    width: 100%;
+    height: 212px;
+}
+
+.container-overlay:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.image-text-overlay{
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    text-align: center;
+    width: 100%;
+    height: 212px;
+    transition: 0.5s ease;
+    opacity: 1;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+
+.image-text-overlay:hover {
+    opacity: 0;
+  }
+
+.text-overlay{
+    color: #ffff;
+}
+
+.tech-attributes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tech-attributes div{
+    margin: 3px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f8f1f1;
+}
+/*********OTHER PROJECTS SECTION******/
+
+
+/*******MY THOUGHTS SECTION*****/
+.more-thoughts-section
+{
+    background: #f8f1f1;
+}
+
+.article-date{
+    margin-bottom: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1%;
+    line-height: 25px;
+    font-size: 17px;
+}
+
+.article-title{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size:17;
+    font-weight: 700;
+    letter-spacing: 1%;
+    line-height: 25px;
+    font-size: 25px;
+}
+.article-paragraph{
+    margin-top:6px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1%;
+    line-height: 25px;
+    font-size: 17px;
+}
+/*********MORE THOUGHTS SECTION******/
+
+.more-thoughts-paragraph {
+    text-decoration: underline;
+}
+
+/********MY SKILLS SECTION*****/
+.my-skills-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+    height: 500px;
+}
+
+.skills-container{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.skills-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+}
+
+.skills-header{
+    font-size: 17px;
+    margin: 0;
+    color:#FF484C;
+}
+
+/********FOR MORE********/
+.for-more-section{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    background-color: #f8f1f1;
+    margin: 0;
+}
+
+.links-container
+{   display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2%;
+}
+
+.border-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #FF484C;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin: 20px;
+    cursor: pointer;
+}
+.border-more:hover{
+    opacity: 0.5;
+}
+/********FOOTER********/
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #FFBD59;
+    width: 100%;
+    color: #ffff;
+}
+
+footer p{
+    margin:0;
+}
+
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        .standard-section{
+            height: 250px;
+        }
+        .standard-projects-container{
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 30px;
+        }
+
+        .summary-container .tech-description{
+            margin-left:50px;
+            margin-right: 50px;
+        }
+
+        .another-project-card{
+            width: 600px;
+        }
+
+        .my-skills-section{
+            height: 350px;
+        }
+        .skills-container{
+            grid-template-columns: repeat(4, 1fr); 
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .standard-section{
+            height: 200px;
+        }
+
+        .standard-projects-container{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+        }
+
+        .summary-container {
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        .tech-description{
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        .another-project-card{
+            width: 600px;
+        }
+
+        .job-title{
+            font-size: 37px;
+        }
+
+        .top-profile-picture{
+            top: 66%;
+            height: 200px;
+            width: 200px;
+        }
+
+        .my-skills-section{
+            height: 350px;
+        }
+        
+        .skills-container{
+            grid-template-columns: repeat(4, 1fr); 
+            margin-top: px;
+        }
+        
+        .tech-attributes{
+            font-size:13px;
+        }
+
+    }
