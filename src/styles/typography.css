@@ -1,0 +1,114 @@
+/* Set global font and font-size */
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+.primary {
+  color: var(--primary);
+}
+.primary--bold {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+}
+
+.hero h2 {
+  font-size: 24px;
+}
+
+p,
+li {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  line-height: 1.7em;
+  font-size: 17px;
+}
+
+p.alt-font {
+  font-family: "Montserrat", sans-serif;
+  line-height: 2em;
+}
+p.centered {
+  text-align: center;
+}
+
+small {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+/* Any link should start with style:none */
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+/* Any list should start with a style of none */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* --------------------------- HEADER lvl 1 STYLES -------------------------- */
+
+h1.primary,
+h1.secondary {
+  font-size: 22px;
+  width: fit-content;
+  align-self: center;
+  margin-bottom: 24px;
+  padding: 5px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+h1.primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+h1.secondary {
+  color: var(--primary);
+}
+
+/* ---------------------------- TITLES FOR CARDS ---------------------------- */
+
+/* The title of a featured project */
+h2.featured {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 28px;
+}
+h2.blog-title--featured {
+  margin-bottom: 0.5em;
+}
+h2.blog-title a {
+  color: black;
+}
+h2.featured--blog a {
+  font-size: 21px;
+}
+
+/* ------------------------ OTHER TYPOGRAPHY ELEMENTS ----------------------- */
+
+/* The individual pills items in a card list */
+li.card__pills--item {
+  font-size: 9px;
+  font-weight: normal;
+}
+
+/* Adds hero specific styles for the typography */
+.hero__wrapper > p {
+  font-size: 13px;
+  font-weight: normal;
+}

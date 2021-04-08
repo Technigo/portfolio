@@ -1,0 +1,41 @@
+/* ------------------------- WRAPPERS AND ALIGNMENTS ------------------------ */
+
+.link__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.link__list--header {
+  justify-content: flex-end;
+  margin-bottom: 33px;
+}
+
+/* -------------------------------- THE ICON -------------------------------- */
+
+.link__icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+}
+
+/* Adds a hover effect to the icons */
+.link__icon img {
+  width: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.link__icon:hover img {
+  width: 60%;
+}
+
+/* A smaller version of the icon for the header */
+.link__icon--small {
+  width: 40px;
+  height: 40px;
+  border-color: white;
+  margin: 2px;
+}
