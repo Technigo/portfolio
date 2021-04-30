@@ -1,0 +1,519 @@
+/* MAIN */
+
+body {
+    margin: 0;
+}
+
+/* SECTION STYLING */
+
+.portfolio-section {
+    padding: 30px 36px 50px;  
+    display: flex;
+    flex-direction: column;
+}
+
+.grey {
+    background-color: #eff3f7;
+}
+
+.intro-section {
+    padding-top: 60px;
+    display: block;
+}
+
+/* HEADER */
+
+header {
+    height: 500px;
+    background-color: #051F32;
+    padding: 40px 36px 0 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-image: url(/assets/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.section-header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+
+    color: #ffff;
+    text-transform: uppercase;  
+    padding: 0 10px;
+    align-self: center;
+    background: rgb(4,28,46);
+    background: linear-gradient(90deg, rgba(4,28,46,1) 0%, rgba(23,83,125,1) 69%);
+}
+
+.icon {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+.icon:hover {
+    width: 35px;
+    height: 35px;
+}
+
+.social-media-icon {
+    text-decoration: none;
+}
+
+.profile-picture {
+    background-image: url(/assets/profile-pic.JPG);
+    border: 3px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: -30px;
+    background-size: cover;
+}
+
+.header-text {
+    align-self: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 0 0 5px;
+}
+
+.header-text-name {
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+
+}
+
+.header-text-portfolio {
+    font-weight: 300;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.header-text-developer {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+
+
+
+/* INTRO SECTION */
+
+.paragraph-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    line-height: 29px;
+    margin-bottom: 0;
+    margin: 0;
+    font-weight: 400;
+    color: black;
+}
+
+/* Decoration symbol */
+
+.decoration {
+    display: flex;
+    align-items: center;
+    float: left;
+    padding-top: 10px;
+    margin-right: 10px;
+    
+}
+
+.line {
+    width: 50px;
+    height: 2px;
+    background: #F0D441;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    background: #F0D441;
+    border-radius: 50px;
+    margin-left: -3px;
+}
+
+.arrow {
+    font-weight: 600;
+    color: #A38418;;
+}
+
+/* TECH */
+
+.paragraph-skills {
+    text-align: center;
+}
+
+
+/* PROJECTS SECTION */
+
+.project-heading, .skill-heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: #A38418;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+
+.other-projects-header, .header-more {
+    font-family: 'Montserrat', sans-serif;
+    color: #041A2D;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 21px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+/* Project card */
+
+.project-card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.image-title-wrapper{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.project-image {
+    width: 100%;
+    filter: brightness(60%);
+    z-index: 2;
+}
+
+.project-title{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    z-index: 1;
+    font-family: Montserrat;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .languages-used {
+    display: flex; 
+}
+
+.language {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 9px;
+    text-align: center;
+    background-color: #F0D441;
+    color: black;
+    padding: 5px 15px;
+    margin: 0 5px 0 0;
+}
+
+.project-card-paragraph {
+    margin: 0;
+}
+
+
+/* MY TOUGHTS SECTION */
+.my-toughts-section {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.my-toughts-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+
+.my-thoughts-image{
+    width: 100%;
+}
+
+.my-thoughts-date {
+    color: #A38418;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.my-thoughts-heading {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0;
+    color: #041A2D;
+}
+
+.my-thoughts-paragraph {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 5px;
+}
+
+.more-toughts {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #041A2D;
+    line-height: 27px;
+}
+
+.more-toughts-date {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #A38418;
+    text-decoration: underline;
+}
+
+.toughts-arrow {
+    color: #A38418;
+    text-decoration: underline;
+}
+
+/* SKILLS SECTION */
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.skills-list {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+}
+
+/* FOR MORE SECTION */
+.social-media-icons-bottom{
+    display: flex;
+    justify-content:center;
+    padding-top: 25px;
+
+}
+
+.social-media-icon-bottom {
+    text-decoration: none;
+    text-align: center;
+    margin: 0 30px;
+}
+
+.icon-bottom {
+    border: 2px solid #A38418;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+.social-media-icon-bottom-name {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #A38418;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* FOOTER */
+
+.footer {
+    height: 300px;
+    background-color: #051F32;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact {
+    padding-top: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #ffff;
+    text-transform: uppercase;  
+}
+
+.contacts {
+    padding-top: 30px;
+}
+
+.contact-info {
+    color: #ffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0 0 5px;
+}
+
+/* HIDING ELEMENTS IN MOBILE VIEW */
+.hide {
+    display: none;
+}
+
+/* Hiding section until have an article */
+.header-more, .more-toughts{
+    display: none;
+}
+
+
+
+/* TABLET VIEW */
+
+@media (min-width: 768px) {
+    
+    /* SHOWING ELEMENTS IN TABLET VIEW AND LARGER SCREEN */
+    .hide {
+        display: block;
+    }
+
+    .portfolio-section {
+        padding: 40px 100px;  
+    }
+
+    .grey {
+        background-color: #eff3f7;
+        padding-bottom: 60px;
+    }
+
+    .intro-section {
+        padding-top: 60px;
+    }
+
+    /* HEADER */
+
+    header {
+        padding: 100px 100px 0 100px;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .header-text {
+        font-size: 24px;
+        line-height: 49px;
+    }
+    
+    .header-text-name {
+        font-size: 17px;
+    }
+    
+    .header-text-portfolio {
+        font-size: 17px;
+    }
+    
+    .header-text-developer {
+        font-size: 55px;
+    }
+
+    /* CARDS */
+
+    .all-cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    .my-toughts-card{
+        width: 45%;
+    }
+
+    /* ICONS BOTTOM */
+    .icon-bottom {
+        width: 60px;
+        height: 60px;
+    }
+
+}
+
+
+@media (min-width: 1280px) {
+    
+     header {
+        padding: 5% 20% 0 20%;
+    }
+
+    .portfolio-section {
+        padding: 3% 20%;  
+    } 
+
+   
+    .profile-picture {
+        width: 220px;
+        height: 220px;
+        margin-top: -20px;
+    }
+    
+    .language {
+        font-size: 10px;
+    }
+
+    .all-cards {
+        max-width: 2000px;
+        margin: 0 auto;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .portfolio-section{
+        max-width: 2000px;
+        margin: 0 auto;
+    }
+
+}
+
+
