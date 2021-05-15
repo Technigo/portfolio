@@ -1,0 +1,615 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h3 {
+  text-align: center;
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 600;
+  background-color: #276678;
+  color: #fff;
+  padding: 3px 6px;
+  margin-bottom: 30px;
+}
+
+h4 {
+  margin: 8px 0 0 0;
+  color: #276678;
+  font-family: 'Roboto';
+  font-size: 17px;
+  line-height: 41px;
+  font-weight: 600;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}  
+
+a:visited {
+  color: #000;
+}
+
+/* HEADER SECTION */
+.header {  
+  height: 600px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.header-container{  /* div containing text element, icons and profile img on header image */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.header-text {   /* div containing all text elements on header image */
+  position: absolute; 
+  top: 150px;
+  left: 35px;
+  width: 70vw;
+}
+
+.header-group {   /* div containing the h1 elements */ 
+  display: flex;
+}
+
+.header-text-portfolio { /* h1: portfolio  */
+  font-family: 'Roboto';
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  padding-right: 10px;
+}
+
+.header-text-name {   /* h1: my name  */
+  font-family: 'Roboto';
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.header-text-title { /* h2: Frontend developer  */
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49px;
+  margin: 0;
+}
+
+.header-text-background { /* h2: my background  */
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+}
+
+.header-icons-container { /* outer div containing the social icons */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 150px;
+}
+
+.header-icons {  /* inner div containing the social icons */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-icons i {   /* styling of social icons */
+  padding: 10px;
+  height: 40px; 
+  border: 1px solid #000;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.header-icons i:hover {
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+
+.img-me-container {
+  position: absolute;
+  right: 40px;
+  top: 450px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  filter: grayscale();
+  z-index: 1;
+  box-shadow: 1px 4px 10px #276678;
+  overflow: hidden;
+}
+.img-me {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+/* PRESENTATION SECTION */
+.presentation {
+  padding-left: 35px;
+  padding-top: 20px;
+ 
+}
+
+.presentation-text {
+  font-size: 16px;
+  line-height: 29px;
+  font-style: normal;
+  width: 80%;
+}
+
+/* TECH SECTION */
+.tech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background-color: #f6f5f5;
+}
+
+.tech-text {
+  font-size: 16px;
+  line-height: 29px;
+  font-style: normal;
+  text-align: center;
+}
+
+/* FEATURED PROJECTS SECTION */
+.projects-container {   /* outer section containing everything */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+
+.featured-projects {  /* inner section containing all the projects cards */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.projects-container h3 {  /* projects heading */
+  margin-bottom: 39px;
+}
+
+.project {  /* div containing each project */
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.project-img-container {   /* div containing the img, to enable text on top of img */
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: block;
+}
+.project-img {
+  width: 100%;
+  height: auto;
+  filter: opacity(0.6);
+  filter: brightness(0.6);
+}
+
+.img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.project p {
+  font-family: 'Roboto';
+  font-size: 17px;
+  line-height: 29px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+
+.skills-buttons {  /* Small skill buttons under each project */
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-buttons p { /* Small skill buttons under each project */
+  font-size: 9px;
+  line-height: 11px;
+  text-align: center;
+  padding: 5px 10px;
+  background-color: #d3e0ea;
+  border-right: 10px solid white;
+}
+
+/* OTHER PROJECTS SECTION */
+.other-projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+
+.other-projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.other-projects-text {
+  font-family: 'Roboto';
+  font-size: 17px;
+  line-height: 29px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* MY THOUGTS SECTION */
+.thoughts-container  { /* Outer section containing the entire section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background-color: #f6f5f5;
+}
+
+.my-thoughts {    /* div containing both articles */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.thought-tablet-desktop {  /* second article not displayed on mobile */
+  display: none;
+}
+
+.thought {   /* div containing each article */
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.thought-img {
+  width: 100%;
+}
+
+.thoughts-date {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
+  margin: 17px 0 0 0;
+  color: #276678;
+}
+
+.thought-title {
+  font-family: 'Roboto';
+  font-size: 21px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.thought-text {
+  font-family: 'Roboto';
+  font-size: 17px;
+  line-height: 32px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0;
+}
+
+.more-thoughts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 24px;
+}
+
+.more-thoughts-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  margin: 25px 0;
+  color: #276678;
+}
+
+.more-thoughts-links {
+  padding: 20px 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29px;
+  text-decoration-color: #276678;
+  color: #000;
+}
+
+/* SKILLS SECTION */
+.skills {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: #f6f5f5;
+  align-items: center;
+}
+
+.skills-all {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.skills-group {
+  width: 40%;
+}
+
+.skills-group p {
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  margin: 5px 0;
+}
+
+.skills-title {
+  color: #276678;
+  font-weight: 800;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 17px;
+  line-height: 29px;
+  margin: 5px 0;
+}
+
+/* FOR MORE SECTION */
+.for-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.for-more-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.for-more-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 0;
+  width: 100%;
+  max-width: 500px;
+}
+
+.for-more-icons i {
+  padding: 14px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 60px;
+  align-items: center;
+  font-size: 30px;
+}
+
+.for-more-icons i:hover {
+  background-color: #1687a7;
+  border: 1px solid #1687a7;
+  color: #fff;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 0 20px; */
+}
+
+.social-link {
+  font-size: 20px;
+  margin-top: 5px;
+  display: none;
+}
+
+/* FOOTER SECTION */
+.footer {
+  background-color: #276678;
+  color: #fff;
+}
+
+.contact-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+/**** TABLET SIZE ****/
+@media screen and (min-width: 700px) {
+
+  .featured-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .project {  /* div containing each project */
+    padding-bottom: 30px;
+    width: 45%;
+  }
+  .other-projects {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .my-thoughts {   /* Outer section containing the entire */
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .thought-tablet-desktop {  /* second article displayed from tablet size */
+    display: block;
+  }
+
+  .thought {   /* Inner div containing each article */
+    width: 45%;
+  }
+
+  .skills-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .skills-group {
+    width: 25%;
+  }
+
+  .for-more-icons {
+    max-width: 600px;
+    padding: 30px 50px;
+  }
+
+  .social-link {
+    font-size: 15px;
+    margin-top: 5px;
+    display: block;
+  }
+  .linkedin {
+    padding-left: 50px;
+  }  
+
+}
+
+/**** SMALL DESKTOP SIZE ****/
+@media screen and (min-width: 1000px) {
+
+  .header-text {   /* div containing all text elements on header image */
+    top: 90px;
+    left: 100px;
+    width: 40vw;
+  }
+
+ .header-text-portfolio { /* h1: portfolio  */
+    font-size: 28px;
+    line-height: 37px;
+    font-weight: 400;
+  }
+  
+  .header-text-name {   /* h1: my name  */
+    font-size: 28px;
+    line-height: 37px;
+    font-weight: 700;
+  }   
+ 
+  .header-text-title { /* h2: Frontend developer  */
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 75px;
+  }
+  
+  .header-text-background { /* h2: my background  */
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+
+  .img-me-container {
+    right: 100px;
+    top: 400px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .header-icons-container { /* outer div containing the social icons */
+    top: 80px;
+    right: 100px;
+    width: 150px;
+  }
+
+  .presentation {
+    padding: 50px 0 50px 100px;
+    width: 80%;
+  }
+
+  .tech-text {
+    width: 50%;
+  }
+
+  .featured-projects, .my-thoughts, .skills-all {
+    width: 1000px;
+  }
+}
+
+/**** LARGE DESKTOP SIZE ****/
+@media screen and (min-width: 1300px) {
+
+  .header-container {
+    max-width: 1300px;
+  }
+
+  .max {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}
