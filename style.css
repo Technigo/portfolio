@@ -1,0 +1,736 @@
+/* GENERIC STYLING */
+
+body {
+    margin: 0;
+}
+
+h1, h3, h5 {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+p, li {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text {
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 0 24px 30px;
+}
+
+.title {
+    background-color: #fb4036;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    padding: 3px;
+    margin-top: 20px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* HEADER */
+
+.welcome {
+    background-color: #F4F4F4;
+}
+
+.header-img {
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.header-text {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-main {
+    position: absolute;
+    top: 17%;
+    left: 8%;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.header-bottom {
+    color: white;
+    font-size: 26px;
+    position: absolute;
+    top: 43%;
+    left: 8%; 
+}
+
+.header-text-span {
+    font-weight: 100;
+}
+
+.header-name {
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    top: 18%;
+    left: 8%;
+}
+
+.top-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100px;
+    position: absolute;
+    top: 48px;
+    right: 43px;
+}
+
+.icons-svg {
+    margin-right: 20px;
+    width: 45px;
+}
+
+.icons-svg img {
+    margin-right: 20px;
+}
+
+.portrait {
+    border-radius: 50%;
+    width: 30%;
+    position: absolute;
+    bottom: 28%;
+    right: 8%;
+    border: 4.5px solid white;
+}
+
+.welcome .text {
+    padding: 49px 24px 43px 24px;
+}
+
+/* TECH SECTION */
+
+.tech {
+    /* height: 100vh; */
+}
+
+.tech p {
+    text-align: center;
+}
+
+/* PROJECT SECTION */
+
+.projects {
+    background-color: #F4F4F4;
+    padding-bottom: 20px;
+}
+
+.project-div {
+    padding-bottom: 30px;
+}
+
+.image-div {
+    position: relative;
+}
+
+.project-div img {
+    width: 80%;
+    height: 44%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.container-text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Roboto', sans-serif;
+    margin-block: 0;
+    transform: translate(-50%, -50%);
+}
+
+.project-div h3 {
+    color: red;
+    text-align: center;
+}
+
+.project-div p {
+    text-align: left;
+}
+
+.tag-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    justify-content: flex-start;
+}
+
+.code-tag {
+    background-color: #fde3ea;
+    font-size: 10px;
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+/* OTHER SECTION */
+
+.other {
+    background-color: #F4F4F4;
+    /* height: 100vh; */
+    padding-bottom: 40px;
+}
+
+.other-container {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.other-projects-div p {
+    text-align: left;
+    text-decoration: none;
+}
+
+.other-projects-div a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.other .other-header {
+    color: red;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.project-name-span {
+    display: none;
+    color: red;
+    font-weight: bold;
+}
+
+/* MY THOUGHTS SECTION */
+
+.thought {
+    width: 80%;
+}
+
+.thoughts-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-thougths-img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.read-more-link {
+  text-decoration: none;
+}
+
+.read-more-arrow {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.date {
+    color: red;
+}
+
+/* MORE THOUGHTS SECTION */
+
+.more-thoughts-article {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.more-thoughts-article p {
+    font-weight: bold;
+}
+
+.date-style {
+    color: red;
+}
+
+/* SKILLS SECTION */
+
+.skills {
+    background-color: #F4F4F4;
+    /* height: 100vh; */
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skills-box {
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    padding-left: 10px;
+    margin-top: 0;
+}
+
+.more {
+    display: none;
+}
+
+.skills-box h5 {
+    color: red;
+    font-size: 18px;
+}
+
+.skills-box li {
+    list-style-type: none;
+}
+
+/* FOR MORE SECTION */
+
+
+.link-div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 60px 0 30px 12%;
+}
+
+.link-div img {
+    width: 50%;
+}
+
+/* CONTACT */
+
+.contact {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 60px 24px 84px 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+.contact h5 {
+    font-size: 24px;
+}
+
+@media (min-width: 767px) and (max-width: 1000px) {
+    .icons-svg {
+        margin-right: 20px;
+        width: 65%;
+    }
+
+    .top-icons {
+        right: 4%;
+        width: 28%;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .portrait {
+        width: 25%;
+    }
+
+    .header-main {
+        font-size: 80px;
+    }
+
+    .header-bottom {
+        font-size: 45px;
+        top: 40%;
+    }
+
+    .header-name {
+        font-size: 21px;
+    }
+
+    .project-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .project-div {
+        width: 60%;
+    }
+
+    .container-text {
+        /* top: 15%;
+        left: 28%; */
+        font-size: 170%;
+    }
+
+    .other .other-header {
+        display: none;
+    }
+
+    .other-projects-div {
+        width: 100%;
+    }
+
+    .project-name-span {
+        display: block;
+    }
+
+    .tag-container {
+        margin-left: 10%;
+    }
+
+    .thoughts-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .thought {
+        width: 30%;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding: 0 % 12% 5% 12%;
+    }
+
+    .more {
+        display: block;
+    }
+
+    .more-thoughts-article {
+        padding-bottom: 25px;
+    }
+
+    .link-div {
+        padding: 60px 0 30px 0%;
+    }
+
+    .link-div img {
+        width: 90px;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    p, li {
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+    
+    .icons-svg {
+        margin-right: 20px;
+        width: 65%;
+    }
+
+    .top-icons {
+        right: 4%;
+        width: 28%;
+    }
+
+    .portrait {
+        width: 14%;
+        right: 19%;
+    }
+
+    .header-main {
+        font-size: 100px;
+        left: 15%;
+    }
+
+    .header-bottom {
+        font-size: 55px;
+        left: 15%;
+        top: 50%;
+    }
+
+    .header-name {
+        font-size: 27px;
+        left: 15%;
+    }
+
+    .welcome .text {
+        width: 1000px;
+        margin: auto;
+    }
+
+    .tech .text {
+        width: 1000px;
+        margin: auto;
+    }
+
+    .project-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container-text {
+        /* top: 7%;
+        left: 23%; */
+    }
+    
+    .other .other-header {
+        display: none;
+    }
+
+    .project-name-span {
+        display: inline-block;
+    }
+
+    .code-tag p {
+        font-size: 12px;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding: 0 12% 0 12%;
+    }
+
+    .more {
+        display: block;
+    }
+
+    .skills-box h5 {
+        font-size: 30px;
+    }
+
+    .text {
+        margin: 30px;
+        font-size: 30px;
+    }
+
+    .project-div {
+        width: 40%;
+    }
+
+    .tag-container {
+        margin-left: 10%;
+    }
+
+    .thoughts--grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .thoughts-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .thought {
+        width: 30%;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding: 0 12% 5% 12%;
+    }
+
+    .more-thoughts-article {
+        padding-bottom: 25px;
+    }
+
+    .other-projects-div {
+        width: 1000px;
+    }
+
+    .link-div {
+        padding: 60px 0 30px 0%;
+    }
+
+    .link-div img {
+        width: 90px;
+    }
+
+    .contact h5 {
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 1200px) {
+    p, li {
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+   
+    .icons-svg {
+        margin-right: 20px;
+        width: 65%;
+    }
+
+    .top-icons {
+        right: 4%;
+        width: 14%;
+    }
+    
+    .portrait {
+        width: 14%;
+        right: 19%;
+    }
+
+    .header-main {
+        font-size: 100px;
+        left: 15%;
+    }
+
+    .header-bottom {
+        top: 46%;
+        font-size: 55px;
+        left: 15%;
+    }
+
+    .header-name {
+        font-size: 27px;
+        left: 15%;
+    }
+
+    .welcome .text {
+        width: 1000px;
+        margin: auto;
+    }
+
+    .tech .text {
+        width: 1000px;
+        margin: auto;
+    }
+
+    .project-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container-text {
+        /* top: 19%;
+        left: 34%; */
+    }
+    
+    .other .other-header {
+        display: none;
+    }
+
+    .project-name-span {
+        display: inline-block;
+    }
+
+    .code-tag p {
+        font-size: 12px;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding: 0 12% 0 12%;
+    }
+
+    .more {
+        display: block;
+    }
+
+    .skills-box h5 {
+        font-size: 30px;
+    }
+
+    .text {
+        margin: 30px;
+        font-size: 30px;
+    }
+
+    .project-div {
+        width: 40%;
+    }
+
+    .tag-container {
+        margin-left: 10%;
+    }
+
+    .thoughts--grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .thoughts-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .thought {
+        width: 30%;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding: 0 12% 5% 12%;
+    }
+
+    .more-thoughts-article {
+        padding-bottom: 25px;
+    }
+
+    .other-projects-div {
+        width: 1000px;
+    }
+
+    .link-div {
+        padding: 60px 0 30px 0%;
+    }
+
+    .link-div img {
+        width: 90px;
+    }
+
+    .contact h5 {
+        font-size: 35px;
+    }
+}
