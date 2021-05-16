@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Irina Jekabsone´s Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/b6e50c11f2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header-container" >
+    <!-- Background image -->
+    <picture>
+      <source srcset="./assets/background-image.jpg" media="(max-width: 667px)">
+      <img class="hero-image" src="./assets/background-image.jpg" alt="Black background image with a different color pencils."/> 
+    </picture>
+    <!-- Header content -->
+    <div class="header-content">
+      <div class="header-icons">
+        <a class="circle-small" href="https://www.linkedin.com/in/irina-j%C4%93kabsone-79742243/" target="_blank" rel="noopener">
+          <img class="icons-small" src="./assets/linkedin-white.svg" alt="Linkedin icon with a link to my Linkedin profile">
+        </a>
+        <a class="circle-small" href="https://github.com/Irina-web-dev" target="_blank" rel="noopener">
+          <img class="icons-small" src="./assets/github-white.svg" alt="Github icon with a link to my Github profile">
+        </a>
+        <a class="circle-small" href="https://stackoverflow.com/c/technigo/users/196/?tab=profile" target="_blank" rel="noopener">
+          <img class="icons-small" src="./assets/stack-white.svg" alt="Stack Overflow icon with a link to my Stack Overflow profile">
+        </a>
+      </div>
+      <!-- Website´s heading -->
+      <div class="header-text" aria-label="My full name and title">
+        <h1 class="flex-item-1">PORTFOLIO: <strong>IRINA JEKABSONE</strong></h1>
+        <h1 class="flex-item-2">frontend</h1>
+        <h1 class="flex-item-3">developer</h1>
+        <h1 class="flex-item-4">+ corporate financial services</h1>    
+      </div>
+      <!-- Profile picture -->
+      <img class="profile-picture" src="./assets/profile-picture.jfif" alt="Photo of me"/>
+    </div>
+  </header>
+  <!-- Main sections -->
+  <main class="main-section" >
+    <section class="section-grey introduction" aria-label="Introductory section">
+      <div class="text-introduction" >
+        <p>
+          <span class="cylinder" aria-hidden="true"></span>
+          <span class="circle" aria-hidden="true"></span>
+          Hello! I am a frontend developer with 10 years experience in financial industry and master's degree in project management. After moving to Stockholm in 2020 I decided to turn my life around and to become a full-time frontend developer. Currently enrolled in a remote frontend bootcamp for 24 weeks (graduating in June 2021) at Technigo in Stockholm and delivering weekly projects covering everything from the basics of programming to structuring web projects in the latest technologies.
+        </p>
+        <p>
+          My best feature is that I am an ambitious, hardworking and result oriented analytical problemsolver, passionate both about tech and financial industry. I am excited over the endless opportunities that programming skills have opened up to me and I am looking forward to combine my past experience with newly acquired programming skills to create awesome, meaningful products for people to enjoy.
+        </p>
+      </div>
+    </section>
+    <section class="section-white tech" aria-label="Section about technologies, tools and libraries I work with">
+      <h2 class="titles">TECH</h2>
+      <p class="tech-paragraph" >HTML, CSS, Flexbox,  <span class="highlight" >JavaScript</span>, ES6, JSX, <span class="highlight">React, React Hooks, Redux</span>, Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, Github.</p>
+    </section>
+    <!-- Projects section -->
+    <section class="section-grey projects" aria-label="Section about my projects">
+      <h2 class="titles">FEATURED PROJECTS</h2>
+      <!-- Flexbox wrapper for featured projects -->
+      <div class="featured-projects-wrapper">
+        <a class="card-link" href="https://github.com/Irina-web-dev/project-movies" target="_blank" title="Link to a movies site project on Github" rel="noopener">
+          <article class="card-article">
+            <div class="overlay-container" aria-hidden="true">
+              <div class="overlay">
+                <p class="overlay-text">MOVIES SITE</p>
+              </div>
+              <img class="image-article" src="./assets/project-movies.png" alt="Movies site">
+            </div>
+            <div class="article-description">
+              <h4 class="article-title">MOVIES SITE.</h4>
+              <p class="article-text">Responsive multi-page React application, using themoviedb.org's API to fetch a list of popular movies.</p>
+            </div>
+            <div class="tags" aria-label="Tags of the technologies, tools and libraries used in the project">
+              <span class="category">React</span>
+              <span class="category">React Hooks</span>
+              <span class="category">React Router</span>
+              <span class="category">API's</span>
+              <span class="category">CSS3</span>
+              <span class="category">JavaScript ES6</span>
+            </div>
+          </article>
+        </a>
+        <a class="card-link" href="https://github.com/Irina-web-dev/project-labyrinth" target="_blank" title="Link to a chatbot project on Github" rel="noopener">
+          <article class="card-article">
+            <div class="overlay-container" aria-hidden="true">
+              <div class="overlay">
+                <p class="overlay-text">MAZE GAME</p>
+              </div>
+              <img class="image-article" src="./assets/project-maze-game.png" alt="Cinema chat bot app">
+            </div>
+            <div class="article-description">
+              <h4 class="article-title">MAZE GAME.</h4>
+              <p class="article-text">A text based labyrinth game made by using React, Redux and API. Built during mob-programming. </p>
+            </div>
+            <div class="tags" aria-label="Tags of the technologies, tools and libraries used in the project">
+              <span class="category">React</span>
+              <span class="category">Redux</span>
+              <span class="category">JavaScript ES6</span>
+              <span class="category">API's</span>
+              <span class="category">Styled components</span>
+            </div>
+          </article>
+        </a>
+        <a class="card-link" href="https://github.com/Irina-web-dev/project-music-releases" target="_blank" title="Link to a music releases project on Github" rel="noopener">
+          <article class="card-article">
+            <div class="overlay-container" aria-hidden="true">
+              <div class="overlay">
+                <p class="overlay-text">MUSIC RELEASES</p>
+              </div>
+              <img class="image-article" src="./assets/project-music-releases.png" alt="Music albums">
+            </div>
+            <div class="article-description">
+              <h4 class="article-title" >MUSIC RELEASES BUILT IN REACT.</h4>
+              <p class="article-text">Pair-programmed music site showing new albums and single releases from a Spotify API.</p>
+            </div>
+            <div class="tags" aria-label="Tags of the technologies, tools and libraries used in the project">
+              <span class="category">HTML5</span>
+              <span class="category">CSS3</span>
+              <span class="category">JavaScript ES6</span>
+              <span class="category">REACT</span>
+              <span class="category">API's</span>
+            </div>
+          </article>
+        </a>
+        <a class="card-link" href="https://github.com/Irina-web-dev/project-happy-thoughts" target="_blank" title="Link to a happy thoughts project on Github" rel="noopener">
+          <article class="card-article">
+            <div class="overlay-container" aria-hidden="true">
+              <div class="overlay">
+                <p class="overlay-text">HAPPY THOUGHTS</p>
+              </div>
+              <img class="image-article" src="./assets/project-happy-thoughts.png" alt="Cards with happy thoughts">
+            </div>
+            <div class="article-description">
+              <h4 class="article-title" >HAPPY THOUGHTS.</h4>
+              <p class="article-text" >Twitter-like app for posting and liking happy thought messages. It is built in React using an API created by Technigo.</p>
+            </div>
+            <div class="tags" aria-label="Tags of the technologies, tools and libraries used in the project">
+              <span class="category">HTML5</span>
+              <span class="category">CSS3</span>
+              <span class="category">JavaScript ES6</span>
+              <span class="category">React</span>
+              <span class="category">API's</span>
+            </div>
+          </article>
+        </a>
+      </div>
+      <h3 class="sub-titles other-projects">OTHER PROJECTS</h3>
+     <!-- Flexbox wrapper for other projects -->
+      <div class="other-projects-wrapper">
+        <a class="card-link" href="https://github.com/Irina-web-dev/project-chatbot" target="_blank" title="Link to a cinema chat bot project on Github" rel="noopener">
+          <article class="card-article-other-projects">
+            <div class="article-description-other-projects">
+              <p class="article-text underline"><span class="article-title underline">CINEMA CHAT BOT. </span>Pair-programmed Cinema tickets ordering chat bot created with JavaScript. <span class="arrow underline" aria-hidden="true">>></span></p>
+            </div>
+            <div class="tags" aria-label="Tags of the technologies, tools and libraries used in the project">
+              <span class="category">HTML5</span>
+              <span class="category">CSS3</span>
+              <span class="category">JavaScript ES6</span>
+            </div>
+          </article>
+        </a>
+        <a class="card-link" href="https://github.com/Irina-web-dev/project-business-site" target="_blank" title="Link to a business site project on Github" rel="noopener">
+          <article class="card-article-other-projects">
+            <div class="article-description-other-projects">
+              <p class="article-text underline"><span class="article-title underline">BUSINESS SITE. </span>Responsive business website for online painting classes. The main idea was to include responsive hero image, sign-up form and FAQ section accordion. <span class="arrow underline" aria-hidden="true">>></span></p>
+            </div>
+            <div class="tags" aria-label="Tags of the technologies, tools and libraries used in the project">
+              <span class="category">HTML5</span>
+              <span class="category">CSS3</span>
+              <span class="category">JavaScript ES6</span>
+            </div>
+          </article>
+        </a>
+        <a class="card-link" href="https://github.com/Irina-web-dev/project-weather-app" target="_blank" title="Link to a weather appt project on Github" rel="noopener">
+          <article class="card-article-other-projects">
+            <div class="article-description-other-projects">
+              <p class="article-text underline"><span class="article-title underline">WEATHER APP. </span>Web app built in JavaScript using an open weather API. <span class="arrow underline" aria-hidden="true">>></span></p>
+            </div>
+            <div class="tags" aria-label="Tags of the technologies, tools and libraries used in the project">
+              <span class="category">HTML5</span>
+              <span class="category">CSS3</span>
+              <span class="category">JavaScript ES6</span>
+              <span class="category">API's</span>
+            </div>
+          </article>
+        </a>
+        <a class="card-link" href="https://github.com/Irina-web-dev/project-survey" target="_blank" title="Link to a reading habits survey project on Github" rel="noopener">
+          <article class="card-article-other-projects">
+            <div class="article-description-other-projects">
+              <p class="article-text underline"><span class="article-title underline">READING HABITS SURVEY. </span>Practicing useState hook and controlled forms in React by building the survey about reading habits. <span class="arrow underline" aria-hidden="true">>></span></p>
+            </div>
+            <div class="tags" aria-label="Tags of the technologies, tools and libraries used in the project">
+              <span class="category">HTML5</span>
+              <span class="category">CSS3</span>
+              <span class="category">JavaScript ES6</span>
+              <span class="category">React</span>
+              <span class="category">React hooks</span>
+            </div>
+          </article>
+        </a>
+        <a class="card-link" href="https://github.com/Irina-web-dev/project-news-site" target="_blank" title="Link to a news site project on Github" rel="noopener">
+          <article class="card-article-other-projects">
+            <div class="article-description-other-projects">
+              <p class="article-text underline"><span class="article-title underline">WINTER NEWS SITE. </span>Responsive news site, using flexbox and CSS-grid. <span class="arrow underline" aria-hidden="true">>></span></p>
+            </div>
+            <div class="tags" aria-label="Tags of the technologies, tools and libraries used in the project">
+              <span class="category">HTML5</span>
+              <span class="category">CSS3</span>
+            </div>
+          </article>
+        </a>
+        <a class="card-link" href="https://github.com/Irina-web-dev/project-guess-who" target="_blank" title="Link to a guess who game project on Github" rel="noopener">
+          <article class="card-article-other-projects">
+            <div class="article-description-other-projects">
+              <p class="article-text underline"><span class="article-title underline">GUESS WHO? GAME. </span>A digital version of the character guessing board game Guess Who? built in JavaScript. <span class="arrow underline" aria-hidden="true">>></span></p>
+            </div>
+            <div class="tags" aria-label="Tags of the technologies, tools and libraries used in the project">
+              <span class="category">HTML5</span>
+              <span class="category">CSS3</span>
+              <span class="category">JavaScript ES6</span>
+            </div>
+          </article>
+        </a>
+      </div>
+    </section>
+    <section class="section-white thoughts" aria-label="Section for articles written by me">
+      <h2 class="titles my-thoughts">MY THOUGHTS</h2>
+      <!-- Flexbox wrapper for my thoughts-->
+      <div class="my-thoughts-wrapper">
+        <a class="card-link" href="https://jekabsone-irina.medium.com/from-finance-to-programming-and-why-i-ended-up-in-a-programming-boot-camp-6550064ee2e4" target="_blank" title="Link to article one" rel="noopener">
+          <article class="card-article">
+            <img class="image-article" src="./assets/ArticleNo1.jpg" alt="Me">
+            <div class="article-description my-thoughts-article">
+              <span class="date" >APR 2021</span>
+              <h4 class="article-title my-thoughts-title">From Finance to Programming and why I ended up in a programming boot camp</h4>
+              <p class="article-text"> I wrote this article to share my thoughts on how I decided to change careers and what conclusions I came to at the beginning of this journey. <span class="arrow" aria-hidden="true">>></span></p>
+            </div>
+          </article>
+        </a>
+        <a class="card-link" href="#" target="_blank" title="Link to article two" rel="noopener">
+          <article class="card-article">
+            <img class="image-article" src="./assets/article-1.jfif" alt="Image of a MacBook with lines of code on its screen on a busy desk">
+            <div class="article-description my-thoughts-article">
+              <span class="date" >APR 2021</span>
+              <h4 class="article-title my-thoughts-title">Placeholder</h4>
+              <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat repudiandae provident asperiores saepe distinctio. Neque molestiae soluta nam quasi! Excepturi, ad! Modi soluta rem dolores deleniti labore amet delectus! <span class="arrow" aria-hidden="true">>></span></p>
+            </div>
+          </article>
+        </a>
+      </div>
+      <!-- <h3 class="sub-titles more-thoughts">MORE THOUGHTS</h3>
+      <!-- Flexbox wrapper for more thoughts-->
+       <!-- <div class="more-thoughts-wrapper">
+        <a class="card-link more-thoughts-card" href="#" target="_blank" title="Link to article three" rel="noopener">
+          <article class="card-article-more-thoughts">
+            <div class="article-description more-thoughts-description">
+              <p class="article-title more-thoughts-title underline"><span class="date underline">APR 2021. </span>Placeholder. <span class="arrow underline" aria-hidden="true">>></span></p>
+            </div>
+          </article>
+        </a>
+        <a class="card-link more-thoughts-card" href="#" target="_blank" title="Link to article four" rel="noopener">
+          <article class="card-article-more-thoughts">
+            <div class="article-description more-thoughts-description">
+              <p class="article-title more-thoughts-title underline"><span class="date underline">APR 2021. </span>Placeholder. <span class="arrow underline" aria-hidden="true">>></span></p>
+            </div>
+          </article>
+        </a>
+        <a class="card-link more-thoughts-card" href="#" target="_blank" title="Link to article five" rel="noopener">
+          <article class="card-article-more-thoughts">
+            <div class="article-description more-thoughts-description">
+              <p class="article-title more-thoughts-title underline"><span class="date underline">APR 2021. </span>Placeholder. <span class="arrow underline" aria-hidden="true">>></span></p>
+            </div>
+          </article>
+        </a>
+      </div> -->
+    </section>
+    <!-- Skills section -->
+    <section class="section-grey skills-container" aria-label="Skills section">
+      <h2 class="titles">SKILLS</h2>
+      <div class="skills-wrapper">
+        <ul class="skills-list">
+          <li><span class="skills-category-name">CODE</span></li>
+          <li>HTML</li>
+          <li>CSS3</li>
+          <li>JavaScript ES6</li>
+          <li>React</li>
+          <li>Styled Components</li>
+          <li>Redux</li>
+          <li>GitHub</li>
+        </ul>
+        <ul class="skills-list">
+          <li><span class="skills-category-name">TOOLBOX</span></li>
+          <li>Atom</li>
+          <li>Postman</li>
+          <li>Visual Studio Code</li>
+          <li>Figma</li>
+          <li>Slack</li>
+          <li>Styled Components</li>
+          <li>Sandbox</li>
+          <li>GitHub</li>
+        </ul>
+        <ul class="skills-list">
+          <li><span class="skills-category-name">UPCOMING</span></li>
+          <li>Node.js</li>
+        </ul>
+        <ul class="skills-list">
+          <li><span class="skills-category-name">MORE</span></li>
+          <li>Web Accessibly</li>
+          <li>Mob-Programming</li>
+          <li>Agile Methodology</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Social media section -->
+    <section class="section-white for-more" aria-label="Links to my Github, Stack Overflow and Linkedin profiles">
+      <h2 class="titles">FOR MORE</h2>
+      <div class="big-icons-wrapper">
+        <div class="icon-wrapper">
+          <a class="circle-big" href="https://www.linkedin.com/in/irina-j%C4%93kabsone-79742243/" target="_blank" rel="noopener">
+            <img class="icons-big" src="./assets/linkedin-color.svg" alt="Linkedin icon with a link to my Linkedin profile">
+          </a>
+          <p>LINKEDIN</p>
+        </div>
+        <div class="icon-wrapper">
+          <a class="circle-big" href="https://github.com/Irina-web-dev" target="blank" rel="noopener">
+            <img class="icons-big" src="./assets/github-color.svg" alt="Github icon with a link to my Github profile">
+          </a>
+          <p>GITHUB</p>
+        </div>
+        <div class="icon-wrapper">
+          <a class="circle-big" href="https://stackoverflow.com/c/technigo/users/196/?tab=profile" target="_blank" rel="noopener">
+            <img class="icons-big" src="./assets/stack-color.svg" alt="Stack Overflow icon with a link to my Stack Overflow profile">
+          </a>
+          <p>STACK OVERFLOW</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer with contact information-->
+  <footer class="footer-container">
+    <h2 class="footer-title">CONTACT</h2>
+      <span>Irina Jekabsone</span>
+      <span>jekabsone.irina@gmail.com</span>
+  </footer>  
+</body>
+</html>
