@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,700;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- Meta tags for social media -->
+  <meta property="og:title" content="Ekaterina Klimenko: frontend developer">
+  <meta property="og:description" content="Aspiring frontend developer with HTML5, CSS3 and JavaScript skills">
+  <meta property="og:image" content="https://ekaterina-klimenko-portfolio.netlify.app/assets/twitter_fb_pic.png">
+  <meta property="og:url" content="https://ekaterina-klimenko-portfolio.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="Image of Ekaterina Klimenko and books about coding">
+  <meta name="twitter:image" content="https://ekaterina-klimenko-portfolio.netlify.app/assets/twitter_fb_pic.png">
+  <title>Ekaterina Klimenko profile</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="media-icons">
+      <a class="header-link" href="https://www.linkedin.com/in/ekaterina-klimenko-a7b1b340/"
+        title="Link to Ekaterina Klimenko LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a class="header-link" href="https://github.com/klimenko3007" title="Link to Ekaterina Klimenko GitHub">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+
+    </div>
+    <section class="name-title" aria-label="Ekaterina Klimenko's name and title">
+      <h2 class="name-surname"> <span class="bold ">Portfolio:</span> Ekaterina Klimenko</h2>
+      <h1 class="title">frontend developer</h1>
+      <h2 class="sub-title">+ project manager</h2>
+    </section>
+    <img src="./assets/my_photo.jpg" alt="Ekaterina's Photo" class="my-image">
+  </header>
+  <section class="intro" aria-label="Information about Ekaterina Klimenko">
+    <div class="content-container intro-section">
+      <img src="./assets/start.svg" alt="Line with a dot">
+      <p class="intro-text">
+        Hello! I am an aspiring frontend developer with background in research and project management. I love solving
+        problems and come up with solutions that can be achieved in reasonable time and using assigned budget. I love
+        working in a team and am used to being a part of a multicultural work environment.
+      </p>
+    </div>
+  </section>
+  <section class="section tech" aria-label="Information about Ekaterina's technical skills">
+    <div class="content-container tech-section">
+      <h3 class="section-header">Tech</h3>
+      <p class="tech-text">
+        JavaScript, React, Redux, React Native, HTML, CSS, Responsive Design, Flexbox, Grid, API:s, GitHub,
+        mob-programming, pair-programming
+      </p>
+    </div>
+  </section>
+  <!-- Featured project cards -->
+  <section class="section featured" aria-label="Information about Ekaterina's projects">
+    <div class=" content-container featured-projects">
+      <h3 class="section-header">featured projects</h3>
+      <div class="cards-wrapper">
+        <a class="project-card" href="https://todos-planner-klimenko.netlify.app"
+          title="To do planner webb app" target="_blank">
+          <div class="image-title-wrapper">
+            <h4 class="project-title">to do</h4>
+            <div class="image-container">
+              <img class="project-image" src="./assets/todo.jpg" alt="Music instruments" target="_blank">
+            </div>
+          </div>
+          <h5 class="project-subtitle">
+            To do planner app
+          </h5>
+          <p class="project-description">
+            The web application is built with React and Redux
+          </p>
+          <ul class="tags-container">
+            <li class="project-tag">React</li>
+            <li class="project-tag">Redux</li>
+            <li class="project-tag">JavaScript</li>
+            <li class="project-tag">CSS</li>
+          </ul>
+        </a>
+        <a class="project-card" href="https://github.com/klimenko3007/project-react-native-app"
+          title="React Native Recipe App" target="_blank">
+          <div class="image-title-wrapper">
+            <h4 class="project-title">yummy</h4>
+            <div class="image-container">
+              <img class="project-image" src="./assets/recipe_app.jpg" alt="Music instruments" target="_blank">
+            </div>
+          </div>
+          <h5 class="project-subtitle">
+            Recipe search app
+          </h5>
+          <p class="project-description">
+            The navite app is built with React Native using styled components and Edaman API data
+          </p>
+          <ul class="tags-container">
+            <li class="project-tag">React Native</li>
+            <li class="project-tag">Styled components</li>
+            <li class="project-tag">API</li>
+          </ul>
+        </a>
+
+        <a class="project-card" href="https://project-movies-klimenko.netlify.app/" title="Movie realse website"
+          target="_blank">
+          <div class="image-title-wrapper">
+            <h4 class="project-title">movie releases</h4>
+            <div class="image-container">
+              <img class="project-image" src="./assets/cinema.svg" alt="Music instruments" target="_blank">
+            </div>
+          </div>
+          <h5 class="project-subtitle">
+            Multi-page movies realse website
+          </h5>
+          <p class="project-description">
+            The multi-page website is built with React Router using the TMDB API data
+          </p>
+          <ul class="tags-container">
+            <li class="project-tag">React</li>
+            <li class="project-tag">useState()</li>
+            <li class="project-tag">React Router</li>
+            <li class="project-tag">useEffect()</li>
+            <li class="project-tag">API</li>
+          </ul>
+        </a>
+        <a class="project-card" href="https://happy-thoughts-klimenko.netlify.app/" title="Happy Thoughts"
+          target="_blank">
+          <div class="image-title-wrapper">
+            <h4 class="project-title">happy thoughts</h4>
+            <div class="image-container">
+              <img class="project-image" src="./assets/hearts.jpg" alt="Hearts" target="_blank">
+            </div>
+          </div>
+          <h5 class="project-subtitle">
+            Twitter-like message board
+          </h5>
+          <p class="project-description">
+            Twitter-like message board built with React using useState and useEffect hooks
+          </p>
+          <ul class="tags-container">
+            <li class="project-tag">React</li>
+            <li class="project-tag">JSX</li>
+            <li class="project-tag">useState()</li>
+            <li class="project-tag">useEffect()</li>
+            <li class="project-tag">API</li>
+          </ul>
+        </a>
+        <a class="project-card" href="https://travel-survey-klimenko.netlify.app" title="Travel survey" target="_blank">
+          <div class="image-title-wrapper">
+            <h4 class="project-title">travel survey</h4>
+            <div class="image-container">
+              <img class="project-image" src="./assets/Suitcases.svg" alt="Suitcases" target="_blank">
+            </div>
+          </div>
+          <h5 class="project-subtitle">
+            Travel survey form
+          </h5>
+          <p class="project-description">
+            Controlled form built with React using useState hooks
+          </p>
+          <ul class="tags-container">
+            <li class="project-tag">React</li>
+            <li class="project-tag">JSX</li>
+            <li class="project-tag">useState()</li>
+            <li class="project-tag">CSS</li>
+          </ul>
+        </a>
+        <a class="project-card" href="https://harry-potter-quiz-collab-project.netlify.app/" title="Harry Potter Quiz" target="_blank">
+          <div class="image-title-wrapper">
+            <h4 class="project-title">Quiz</h4>
+            <div class="image-container">
+              <img class="project-image" src="./assets/quiz.jpg" alt="Suitcases" target="_blank">
+            </div>
+          </div>
+          <h5 class="project-subtitle">
+            Harry Potter quiz
+          </h5>
+          <p class="project-description">
+            Quiz built with React and Redux
+          </p>
+          <ul class="tags-container">
+            <li class="project-tag">React</li>
+            <li class="project-tag">Redux</li>
+            <li class="project-tag">useEffect()</li>
+            <li class="project-tag">CSS</li>
+          </ul>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Other projects -->
+
+  <section class="section other-projects" aria-label="Ekaterina Klimenko's other projects">
+    <div class="content-container other">
+      <h3 class="section-header red">other projects</h3>
+      <div class="cards-wrapper">
+        <a class="project-card other-card" href="https://music-release-project.netlify.app" title="Music realse website"
+          target="_blank">
+          <h4 class="project-subtitle other-subtitle">Music releases app.</h4>
+          <p class="project-description other-description">
+            The website is built with React functional components <span class="arrow">>></span>
+          </p>
+          <ul class="tags-container">
+            <li class="project-tag">React</li>
+            <li class="project-tag">JSX</li>
+            <li class="project-tag">React components</li>
+            <li class="project-tag">CSS</li>
+          </ul>
+        </a>
+        <a class="project-card other-card" href="https://weather-app-klimenko.netlify.app" title="Weather App"
+          target="_blank">
+          <h4 class="project-subtitle other-subtitle">Weather app.</h4>
+          <p class="project-description other-description">
+            Web app built with OpenWeatherMap API <span class="arrow">>></span>
+          </p>
+          <ul class="tags-container">
+            <li class="project-tag">HTML5</li>
+            <li class="project-tag">CSS</li>
+            <li class="project-tag">JavaScript</li>
+            <li class="project-tag">API</li>
+          </ul>
+        </a>
+        <a href="https://guess-who-game-klimenko.netlify.app" title="Guess Who? Game" class="project-card other-card"
+          target="_blank">
+          <h4 class="project-subtitle other-subtitle">Guess Who?</h4>
+          <p class="project-description other-description">
+            The website imitates the famous board game Gues Who? <span class="arrow">>></span>
+          </p>
+          <ul class="tags-container">
+            <li class="project-tag">HTML5</li>
+            <li class="project-tag">CSS</li>
+            <li class="project-tag">JavaScript</li>
+          </ul>
+        </a>
+        <a href="https://flower-chatbot-klimenko.netlify.app" title="Flower shop chat bot"
+          class="project-card other-card" target="_blank">
+          <h4 class="project-subtitle other-subtitle">flower bot.</h4>
+          <p class="project-description other-description">
+            Chat bot built with JavaScript to order flowers in a flower shop <span class="arrow">>></span>
+          </p>
+          <ul class="tags-container">
+            <li class="project-tag">HTML5</li>
+            <li class="project-tag">CSS</li>
+            <li class="project-tag">JavaScript</li>
+          </ul>
+        </a>
+        <a class="project-card other-card" href="https://cat-show-klimenko.netlify.app"
+          title="Example of busines website">
+          <h4 class="project-subtitle other-subtitle">Event website.</h4>
+          <p class="project-description other-description">Registration form built with HTML forms and JavaScript. <span
+              class="arrow">>></span>
+          </p>
+          <div class="tags-container">
+            <p class="project-tag">HTML5</p>
+            <p class="project-tag">CSS</p>
+            <p class="project-tag">JavaScript</p>
+          </div>
+        </a>
+        <!-- project -->
+        <a href="https://arctic-news-site-klimenko.netlify.app" class="project-card other-card"
+          title="Example of a news website">
+          <h4 class="project-subtitle other-subtitle">News website.</h4>
+          <p class="project-description other-description">
+            Responsive news website build with HTML and CSS <span class="arrow">>></span>
+          </p>
+          <ul class="tags-container">
+            <li class="project-tag">HTML5</li>
+            <li class="project-tag">CSS</li>
+          </ul>
+        </a>
+        <!-- project -->
+
+      </div>
+    </div>
+  </section>
+  <section class="section thoughts" aria-label="Ekaterina Klimenko's blog posts">
+    <div class="content-container thoughts-container">
+      <h3 class="section-header">my thoughts</h3>
+      <div class="cards-wrapper">
+        <a href="https://ekaklim3007.medium.com/learning-programming-why-i-decided-to-start-this-journey-and-what-i-have-found-out-about-it-so-far-922334628e45"
+          class="thought-card" title="Link to blogpost1">
+          <img class="thought-image" src="./assets/code_computer.jpg" alt="Picture of a computer">
+          <p class="date">DEC 2019</p>
+          <h4 class="thought-title">Learning programming: why I decided to start this journey</h4>
+          <p class="thought-description">
+            I’ve always had some assumptions about programming and never have thought that it would be something that
+            would interest me. But once I started my coding journey I realised I was wrong ...
+            dui. <span class="arrow">>></span>
+          </p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+  <section class="section more-thoughts" aria-label="Ekaterina Klimenko's other blog posts">
+    <div class="content-container more">
+      <h3 class="section-header red">more thoughts</h3>
+      <a href="#" class="more-cards" title="Link to blogpost3">
+        <span class="date-more">DEC 2019.</span> How to stop being scared: Learning to love code <span
+          class="arrow-more">>></span>
+      </a>
+    </div>
+  </section>
+  <section class="section skills" aria-label="Ekaterina Klimenko's skill set">
+    <div class="content-container withskills">
+      <h3 class="section-header">skills</h3>
+      <div class="skill-container">
+        <div class="skill-wrapper">
+          <h3 class="section-header red">code</h3>
+          <ul class="skill-list">
+            <li class="list-line">JavaScript ES6</li>
+            <li class="list-line">React</li>
+            <li class="list-line">Redux</li>
+            <li class="list-line">HTML</li>
+            <li class="list-line">CSS</li>
+            <li class="list-line">GitHub</li>
+
+          </ul>
+        </div>
+        <div class="skill-wrapper">
+          <h3 class="section-header red">Toolbox</h3>
+          <ul class="skill-list">
+            <li class="list-line">Postman</li>
+            <li class="list-line">CodePen</li>
+            <li class="list-line">Code Sandbox</li>
+            <li class="list-line">Slack</li>
+            <li class="list-line">VS Code</li>
+          </ul>
+        </div>
+        <div class="skill-wrapper last-skill">
+          <h3 class="section-header red">more</h3>
+          <ul class="skill-list">
+            <li class="list-line">Zoom</li>
+            <li class="list-line">Teams</li>
+            <li class="list-line">Project management</li>
+            <li class="list-line">Budget Planning</li>
+          </ul>
+        </div>
+        <div class="skill-wrapper">
+          <h3 class="section-header red">upcoming</h3>
+          <ul class="skill-list">
+            <li class="list-line">Node.js</li>
+            <li class="list-line">NPM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section formore" aria-label="Links to Ekaterina Klimenko's Github, Stack Overflow and Linkedin">
+    <div class="content-container withmore">
+      <h3 class="section-header for-more">for more</h3>
+      <div class="icons-container">
+        <a href="https://www.linkedin.com/in/ekaterina-klimenko-a7b1b340/" class="icon-link">
+          <i class="fab fa-linkedin-in"></i>
+          <p class="icon-title">linkedin</p>
+        </a>
+        <a href="https://github.com/klimenko3007" class="icon-link" title="Link to GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i>
+          <p class="icon-title">github</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <h3 class="contact-info-header">contact</h3>
+    <p class="contact-info">Ekaterina Klimenko</p>
+    <p class="contact-info">+46 700 53 58 61</p>
+    <p class="contact-info">klimenko3007@gmail.com</p>
+  </footer>
+</body>
+
+</html>
