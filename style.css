@@ -1,0 +1,521 @@
+/* MONTSERRAT font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* ROBOTO font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  margin: 0;
+}
+/* HEADER SECTION */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-img {  
+  width: 100%;
+  height: 520px;
+  background-size: cover;
+  background-image: url('./assets/mountain.jpg');  
+  margin-top: -8px;
+}
+
+.header-title {
+  position: relative;
+  left: 24px;
+  top:100px;   
+  width: 220px;
+  height: 200px;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.social-media-icons-header {
+  display: flex; 
+  justify-content: space-evenly;
+  position: relative;  
+  height: 60px;
+  width: 150px;
+  bottom: 160px; 
+  left: 45%;   
+}
+
+.social-media-icons-header .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;  
+  border: 2px solid #fff;
+  border-radius: 50%; 
+  box-shadow: 0 0 5px #3d3c3c;
+}
+
+.social-media-icons-header .circle :hover{
+  transform: scale(1.2);
+}
+
+
+.linkedin-white,
+.github-white,
+.stack-white {
+  width: 20px;
+  display: flex;  
+}
+
+.profile-pic-container {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  left: 45%;
+  top: 100px;
+  border: 4px solid #fff;
+  border-radius: 50%;  
+  overflow: hidden;
+}
+
+.profile-picture {
+  width: 150px;  
+}
+/* CONTENT */
+.about-me-wrapper,
+.project-wrapper,
+.my-thoughts-wrapper,
+.skills-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  flex-direction: column;
+}
+
+.about-me { 
+  display: flex;  
+  justify-content: center;
+  width: 100%;
+  height: auto;  
+  background: #F4F4F4;
+}
+
+.about-me-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 29px;
+  padding: 35px 24px;
+  color: #000;
+  width: 80%;
+  text-align: left;
+}
+/* orange arrow in begining of about me text */
+.start-icon {
+  width: 30px;
+  height: 10px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+.heading {
+  margin: 24px 0;
+  width: fit-content;
+  height: fit-content;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center; 
+  color: #fff;
+  background-color: #f43;
+}
+
+.heading-just-text {
+  color: #f43;
+  font-size: 21px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.tech {  
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  width: 330px; 
+  height: auto; 
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 29px;
+  color: #000;
+  margin-bottom: 60px;
+}
+
+.projects,
+.other-projects { 
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  width: 100%;   
+  background: #F4F4F4;
+  margin-bottom: 60px;  
+}
+
+.featured-projects { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  width: 100%;
+}
+
+.project-card-1,
+.project-card-2 { 
+  display: flex;   
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 55%;
+  height: auto;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.heading-on-pic {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: relative; 
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  bottom: 115px;   
+}
+
+.project-description {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.project-img {  
+  filter: brightness(60%);
+  width: 330px;
+  height: 210px;
+  display: flex;
+  align-self: center;
+}
+
+.project-text,   
+.my-thoughts-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: 'Roboto',sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;  
+  color: #000;  
+  text-align: left;
+}
+
+.project-text h4 { 
+  color: #f43;
+  margin: 0 0 24px;  
+}
+
+.my-thoughts-text p {
+  margin: 0;
+}
+
+.my-thoughts-about-code h4 {
+  color: #000;
+  margin: 0;
+}
+.orange-heading {
+  color: #f43;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+.date {
+  color: #f43;
+  margin: 20px 0 0 0;
+  font-size: 16px;
+}
+
+.project-text p {
+  margin: 0 0 24px;
+}
+
+.project-techniques {
+  width: fit-content;
+  height: 22px;
+  font-size: 9px;  
+  line-height: 19px;
+  font-family: 'Roboto', sans-serif;
+  background: #FDDFE7;
+  margin-right: 5px;   
+}
+
+.project-techniques-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;   
+  align-self: flex-start;   
+}
+
+.article-with-img-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+}
+
+.article-with-img {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.article-just-link {
+  width: 330px;
+  display: flex;  
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  align-self: center;
+}
+
+.article-just-link p {
+  margin: 20px 0 0 0;
+}
+
+.article-just-link a {
+  color:#f43;
+  margin: 20px 0 0 0;
+}
+
+.my-thoughts-about-code {
+  display: flex;  
+  flex-direction: column; 
+  align-items: center;
+  width: 100%; 
+  margin-bottom: 60px;  
+}
+
+.my-thoughts-about-code a:any-link {
+  color: #f43;
+  text-decoration: none;
+}
+
+.my-thoughts-img {  
+  width:330px; 
+  height: auto;  
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F4F4F4; 
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 20px; 
+  font-family: 'Roboto', sans-serif;  
+}
+
+.skills h4 {
+  color: #f43;  
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;  
+  font-size: 16px; 
+  text-align: left;  
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  font-family: 'Roboto', sans-serif;  
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif; 
+  align-items: center;   
+  padding-top: 60px;
+}
+
+.contact-text h2 {
+  margin-bottom: 20px; 
+}
+
+.contact-text span {
+  font-size: 15px;
+}
+/* Social media icons in bottom of page */
+.social-media-icon {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0px;
+}
+
+.socme-bottom {
+  display: flex;
+  flex-direction: row; 
+}
+
+.linkedin-orange,
+.github-orange,
+.stack-orange {
+  width: 50px;  
+}
+
+.linkedin-orange:hover,
+.github-orange:hover,
+.stack-orange:hover {
+  transform: scale(1.2);  
+}
+
+.socme-bottom .circle-orange {
+  display: flex;   
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;  
+  border: 3px solid #f54;
+  border-radius: 50%;
+}
+
+.icon-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  width: 115px;
+}
+
+.icon-bottom p {
+  color: #f54;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+}
+
+.footer {
+  height: 300px;
+  background-color: #03d; 
+  width: 100%;
+}
+
+a:any-link {
+  color: #f54;
+  text-decoration: none;  
+}
+
+/* Responsive */
+@media (min-width: 768px){
+
+.header-title {
+  left: 23%;
+  top: 45%;
+  font-size: 28px;
+  width: 500px; 
+  -webkit-text-stroke: .5px #3d3c3c;
+  font-family: sans; color: #fff;
+}
+
+.social-media-icons-header {
+  left: 55%
+}
+
+.linkedin-white,
+.github-white,
+.stack-white {
+  width: 40px;  
+}
+
+.social-media-icons-header .circle {  
+  width: 80px;
+  height: 80px;   
+}
+
+.social-media-icons-header {
+  width: 300px;
+}
+
+.profile-pic-container {
+  left: 75%;
+}
+
+.start-icon {
+  width: 70px;
+  height: 20px;
+}
+
+.tech {
+  width: 600px;
+}
+
+.projects,  
+.my-thoughts-about-code { 
+  width: 100vw;  
+}
+
+.other-projects {
+  width: 80%;
+}
+
+.heading-on-pic {
+  font-size: 30px;
+}
+
+.article-with-img-container,
+.featured-projects,
+.about-me {
+  width: 100vw;
+  flex-flow: row ;
+  justify-content: space-around;  
+}
+
+.article-with-img,
+.project-card-1,
+.project-card-2 {
+  width: 45%;
+}
+
+.project-text {
+  margin: 0 45px;
+}
+
+.skills {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.icon-footer {
+  width: 190px;
+}
+
+}
