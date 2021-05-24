@@ -1,0 +1,663 @@
+/**
+ * GENERAL STYLING (mobile) *
+ *
+ * @format
+ */
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	background-color: #eceaea;
+	color: #3a362c;
+	font-family: "Roboto", sans-serif;
+}
+
+.main-text {
+	font-family: "Montserrat", sans-serif;
+	margin-bottom: 5px;
+}
+
+/*** HEADER (mobile) ***/
+
+.header {
+	background-image: url(./assets/bg-mobile-ipad-640.jpg);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	height: 400px;
+}
+
+.social-media1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	position: relative;
+	margin-right: 10%;
+	margin-top: 6%;
+}
+
+.logo {
+	width: 50px;
+}
+
+.header-text {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10%;
+	line-height: 1.2;
+	position: relative;
+	top: 15%;
+}
+
+.title {
+	font-family: "Roboto", sans-serif;
+	font-size: 0.8rem;
+}
+
+.portfolio {
+	font-weight: 100;
+}
+
+.my-position {
+	font-family: "Montserrat", sans-serif;
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: 2px;
+}
+
+.my-background {
+	font-size: 1.3rem;
+	margin-top: 2%;
+	font-weight: 400;
+}
+
+.my-picture {
+	width: 110px;
+	border-radius: 50%;
+	border: solid white 3px;
+	align-self: flex-end;
+	position: relative;
+	top: 85px;
+	right: 10%;
+}
+
+/*** MAIN CONTENT (mobile) ***/
+
+.width-container {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 20px;
+}
+
+.container {
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.section:nth-of-type(even) {
+	background-color: white;
+}
+
+.section:last-child {
+	background-color: teal;
+}
+
+/* Headings */
+
+.title-section {
+	background-color: #2da6af;
+	padding: 5px;
+	color: white;
+	width: fit-content;
+	margin-bottom: 40px;
+}
+
+.subtitle-section {
+	font-family: "Montserrat", sans-serif;
+	color: #2da6af;
+	font-weight: 500;
+	align-self: center;
+}
+
+.card-title {
+	color: #2da6af;
+	font-weight: 500;
+	align-self: flex-start;
+	margin-top: 25px;
+}
+
+/* Summary section ***/
+
+.line {
+	display: inline-block;
+	width: 50px;
+	height: 2px;
+	background-color: #2da6af;
+	margin-bottom: 6px;
+}
+
+.circle {
+	display: inline-block;
+	background-color: #2da6af;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	margin-left: -10px;
+	margin-right: 10px;
+}
+
+/* Tech section */
+
+.tech {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.highlight {
+	font-weight: 800;
+}
+
+/* Featured projects section */
+
+.featured-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* width: 100%; */
+}
+
+.figure {
+	position: relative;
+}
+
+.project-name {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #eceaea;
+	font-size: 1.7rem;
+}
+
+.card-link {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.project-description {
+	color: #3a362c;
+}
+
+.project-img {
+	width: 100%;
+}
+
+.featured-project-card .figure img {
+	-webkit-filter: brightness(45%);
+	filter: brightness(20%);
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+
+/* .featured-project-card .figure:hover img {
+	-webkit-filter: brightness(1);
+	filter: brightness(1);
+} */
+
+.tags-container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.tags {
+	margin: 10px 10px 0 0;
+	padding: 7px;
+	background-color: #c7e2e6;
+	color: #3a362c;
+}
+
+/*Other projects section*/
+
+.other-projects-container {
+	width: 100%;
+}
+
+.card-text-underlined {
+	color: #3a362c;
+	text-decoration: underline;
+}
+
+.arrow {
+	color: teal;
+}
+
+/* My thoughts mobile*/
+
+.my-thoughts-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* width: 100%; */
+}
+
+.article-date {
+	color: #2da6af;
+	font-weight: 500;
+	align-self: flex-start;
+	margin-top: 20px;
+}
+
+.article-title {
+	font-size: 1.2rem;
+	color: #3a362c;
+	font-weight: 500;
+}
+
+.article-intro {
+	color: #3a362c;
+	margin: 10px 0 40px 0;
+}
+
+.article-img {
+	width: 100%;
+}
+
+/*Other thoughts */
+
+.more-thoughts-container {
+	width: 100%;
+}
+
+.card-more-thoughts {
+	margin: 10px 0 30px 0;
+}
+
+.underline {
+	/*this can be reused*/
+	text-decoration: underline;
+}
+
+.arrow {
+	color: teal;
+	text-decoration: underline;
+}
+
+/* My skills section */
+
+.skills-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+}
+
+.skills-subtitle {
+	margin-top: 10px;
+	text-align: center;
+	color: #2da6af;
+}
+
+.skills-list {
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 0;
+}
+
+/* For more section */
+
+.for-more .subtitle-section {
+	margin-bottom: 20px;
+}
+
+.social-n1 {
+	padding-top: 0;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+}
+
+.social-n2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.social-n3 {
+	height: 55px;
+	width: 55px;
+	border-radius: 50%;
+	border: solid #2da6af;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px 15px;
+}
+
+.social-n3 img {
+	filter: invert(57%) sepia(66%) saturate(495%) hue-rotate(136deg)
+		brightness(87%) contrast(80%);
+	width: 50%;
+	position: absolute;
+	right: 25%;
+	top: 25%;
+}
+
+.social-n2 p {
+	font-size: 0.8rem;
+	color: #2da6af;
+}
+
+/* Contact section */
+
+.contact {
+	width: 100%;
+	margin: 0;
+	height: 300px;
+	background-color: teal;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	color: #eceaea;
+	font-family: "Montserrat", sans-serif;
+}
+
+.info {
+	margin-top: 0;
+	color: #eceaea;
+}
+
+.contact-title {
+	margin-bottom: 30px;
+	color: #eceaea;
+	font-size: 2.3rem;
+}
+
+/*** STYLING FOR TABLET VIEW ***/
+
+@media only screen and (min-width: 768px) {
+	/*** GENERAL (tablet) ***/
+
+	.width-container {
+		width: 768px;
+		padding: 100px 10px;
+	}
+
+	.title-section {
+		font-size: 2.5rem;
+		margin-bottom: 40px;
+	}
+
+	.subtitle-section {
+		font-size: 2.3rem;
+		margin-bottom: 20px;
+	}
+
+	.card-title {
+		font-size: 1.8rem;
+	}
+
+	p,
+	ul {
+		font-size: 1.8rem;
+		margin-top: 15px;
+	}
+
+	p {
+		align-self: flex-start;
+	}
+
+	.contact p {
+		align-self: center;
+	}
+
+	/*** HEADER (tablet) ***/
+
+	.header {
+		height: 500px;
+	}
+
+	.logo {
+		width: 60px;
+	}
+
+	.header-text {
+		position: relative;
+		top: 7%;
+	}
+
+	.title {
+		font-family: "Roboto", sans-serif;
+		font-size: 1.3rem;
+	}
+
+	.portfolio {
+		font-weight: 100;
+	}
+
+	.my-position {
+		font-size: 3.5rem;
+		line-height: 1;
+		letter-spacing: 2px;
+	}
+
+	.my-background {
+		font-size: 1.9rem;
+		font-weight: 400;
+	}
+
+	.my-picture {
+		width: 180px;
+		top: -10px;
+	}
+
+	/*** MAIN CONTENT (tablet) ***/
+
+	.main-text {
+		font-size: 1.8rem;
+	}
+
+	p,
+	ul {
+		font-size: 1.6rem;
+	}
+
+	.summary {
+		margin-top: 5%;
+	}
+
+	.featured-container,
+	.my-thoughts-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 20px;
+		width: 100%;
+	}
+	.project-img {
+		width: 100%;
+	}
+	.tags {
+		font-size: 1rem;
+	}
+
+	.article-date {
+		font-size: 1.8rem;
+		font-weight: normal;
+	}
+
+	.article-title {
+		font-size: 1.7rem;
+	}
+
+	.skills-subtitle {
+		font-size: 1.8rem;
+		margin-top: 20px;
+	}
+
+	.for-more {
+		margin-top: 100px;
+	}
+
+	.social-n1 {
+		padding-top: 0;
+	}
+
+	.social-n3 {
+		width: 100px;
+		height: 100px;
+		margin-top: 20px;
+	}
+
+	.social-n2 p {
+		font-size: 1rem;
+		align-self: center;
+	}
+
+	.contact {
+		margin: 0;
+		height: 400px;
+	}
+}
+
+/*** STYLING FOR DESKTOP VIEW ****/
+
+@media only screen and (min-width: 1024px) {
+	.width-container {
+		width: 1024px;
+		/* 	padding: 150px 0; */
+	}
+
+	.title-section {
+		font-size: 2.7rem;
+	}
+
+	.subtitle-section {
+		font-size: 2.5rem;
+	}
+
+	/*** Header ***/
+
+	.header {
+		background-image: url("./assets/bg-desktop.jpg");
+		background-size: cover;
+		width: 100%;
+		height: 600px;
+		padding: 100px 0;
+	}
+
+	.social-media1 {
+		right: 4%;
+		bottom: 100px;
+	}
+	.logo {
+		width: 100px;
+	}
+
+	.header-text {
+		position: relative;
+		top: -24%;
+	}
+
+	.title {
+		font-family: "Roboto", sans-serif;
+		font-size: 1.3rem;
+	}
+
+	.portfolio {
+		font-weight: 100;
+	}
+
+	.my-position {
+		font-size: 4rem;
+		line-height: 1;
+		letter-spacing: 2px;
+	}
+
+	.my-background {
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 0.7;
+	}
+
+	.my-picture {
+		width: 265px;
+		top: -150px;
+		right: 10%;
+	}
+
+	/*** MAIN SECTION (DESKTOP)***/
+
+	.featured-container,
+	.my-thoughts-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 40px;
+		width: 100%;
+	}
+
+	.featured-project-card {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	/* .project-img {
+		width: 100%;
+	} */
+
+	.project-name {
+		font-size: 2rem;
+	}
+
+	.feat-project {
+		margin-top: 0;
+	}
+
+	.tags-container {
+		margin-bottom: 50px;
+	}
+
+	.tags {
+		font-size: 1rem;
+	}
+
+	.social-n1 {
+		padding-top: 0;
+	}
+
+	.skills-subtitle {
+		font-size: 2.5rem;
+		font-weight: 500;
+	}
+	.contact-title {
+		font-size: 2.5rem;
+	}
+}
