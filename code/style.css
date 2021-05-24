@@ -1,0 +1,993 @@
+:root {
+  --primary: #8f4683;
+  --secondary: #dba1b1;
+  --light: #eed5dc;
+  --darken-blend: #6b3b6b;
+  --very-dark: #2d1e19;
+  --contrast: #66843e;
+  --light-contrast:#92bd5b;
+  --dark-contrast:#34451E;
+}
+
+* { 
+  margin: 0;
+}
+
+/*~~~~~~Styling for mobile~~~~~~*/
+
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--light);
+  color: var(--very-dark);
+}
+
+/********* TOP SECTION *********/
+
+.top-section {
+  width: 100%;
+  background-image: url(./assets/background-park-mobile.jpg);
+  background-size: cover;
+  background-color: var(--contrast);
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 24px 0;
+  box-sizing: border-box;
+}
+
+.top-navbar-social-media {
+  width: 130.5px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+  position: relative;
+}
+
+.top-navbar-social-media-link  {
+  width: 36px;
+  height: 36px;
+  border: 2px solid var(--light);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-navbar-social-media-link:hover, .top-navbar-social-media-link:focus {
+  background-color: var(--dark-contrast);
+}
+
+.top-navbar-social-media-link:active {
+  background-color: var(--secondary);
+}
+
+.linkedin {
+  width: 20px;
+}
+
+.github {
+  width: 26px;
+  position: relative;
+  bottom: 2px;
+}
+
+.stackoverflow {
+  width: 22px;
+  position: relative;
+  bottom: 1px;
+}
+
+.top-header {
+  color: var(--light);
+  margin: 33px 0 0;
+}
+
+.top-header-portfolio-name {
+  font-family:'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+}
+
+.top-header-portfolio-name-bold {
+  font-weight: 700;
+}
+
+.top-header-working-title {
+  font-family:'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+}
+
+.top-header-addition {
+  font-family:'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.profile-picture-container {
+  width: 180px;
+  height: 180px;
+  border: 3px solid var(--light);
+  border-radius: 50%;
+  overflow: hidden;
+  align-self: flex-end;
+  position: relative;
+  top: 16px;
+}
+
+.profile-picture {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/********* SUMMARY *********/
+.summary {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.summary-container {
+  width: 327px;
+  font-family:'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  padding: 49px 24px 43px 24px;
+}
+
+.start-figure {
+  width: 55px;
+  height: 11px;
+  top: 10px;
+}
+
+/********* TECH *********/
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.section-header {
+  font-family:'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--light);
+  background-color: var(--primary);
+  height: 27px;
+  padding: 1px 2px 0 2px;
+  margin: 40px 0; 
+  display: inline;
+}
+
+.tech-skills-text {
+  width: 327px;
+  font-family:'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  text-align: center;
+}
+
+/********* FEATURED PROJECTS *********/
+.project-link {
+  text-decoration: none;
+  color: var(--very-dark);
+}
+
+.featured-project-container, .other-project-container {
+  position: relative;
+  width: 327px;
+  margin-bottom: 40px;
+}
+
+.featured-project-container:focus .project-name, .featured-project-container:hover .project-name {
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.featured-project-container:active .project-name {
+  color: var(--light-contrast);
+}
+
+.other-project-container:focus .project-explanation, 
+.other-project-container:hover .project-explanation {
+  background-color: var(--light-contrast);
+}
+
+.other-project-container:active .project-explanation {
+  background-color: var(--secondary);
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.featured-project-image-container1 {
+  background-image: url("./assets/labyrinth.jpg");
+  background-color:var(--darken-blend);
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-project-image-container2 {
+  background-image: url("./assets/todo.jpg");
+  background-color:var(--darken-blend);
+  background-blend-mode: multiply;
+  background-size: cover;
+  width: 327px;
+  height: 202px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 10px;
+}
+
+.project-name {
+  font-family:'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: var(--light);
+  text-align: center;
+}
+
+.project-explanation {
+  font-family:'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29px;
+  color: var(--primary);
+}
+
+.project-text {
+  font-family:'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+}
+
+.tech-symbols {
+  display: flex;
+  flex-direction: row;
+  padding-inline-start: 0;
+  list-style-type: none;
+}
+
+.tech-symbol {
+  font-family:'Roboto', sans-serif;
+  font-size: 9px;
+  line-height: 11px;
+  letter-spacing: 0.01em;
+  background-color: var(--secondary);
+  padding: 3px 5px;
+  margin: 0 8px 0 0;
+}
+
+.secondary-section-header {
+  font-family:'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: var(--primary);
+  margin: 56px 0 21px;
+}
+
+.project-text-arrows {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/********* MY THOUGHTS *********/
+.thoughts-container {
+  margin: 0;
+  padding: 0;
+}
+
+.blog-entry-link {
+  width: 327px;
+  margin-bottom: 40px;
+  text-decoration: none;
+  color: var(--very-dark);
+}
+
+.blog-entry-link:visited {
+  color: var(--very-dark);
+}
+
+.blog-entry-link:focus, .blog-entry-link:hover  {
+  background-color: var(--light-contrast);
+}
+
+.blog-entry-link:active {
+  background-color: var(--secondary);
+}
+
+.blog-entry-text {
+  color: var(--very-dark);
+}
+
+.thoughts-image-container {
+  width: 327px;
+}
+
+.thoughts-image {
+  width: 327px;
+  object-fit: contain;
+}
+
+.blog-entry {
+  margin-top: 32px;
+  width: 327px;
+}
+
+.date {
+  font-family:'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: var(--primary);
+}
+
+.blog-entry-heading {
+  font-family:'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.blog-entry-text {
+  font-family:'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+.blog-entry-arrows {
+  color: var(--primary);
+}
+
+.blog-entry-link-heading {
+  color: var(--primary); 
+}
+
+.blog-entry-link:link {
+  font-family:'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29px;
+  color: var(--primary);
+}
+
+.blog-entry-link:visited {
+  color: var(--primary);
+}
+
+.blog-entry-link:focus {
+  background-color: var(--light-contrast);
+}
+
+.blog-entry-link:hover {
+  background-color: var(--light-contrast);
+}
+
+.blog-entry-link:active {
+  background-color: var(--secondary);
+}
+
+.more-thoughts {
+  margin-top: 16px;
+}
+
+.blog-entry-link-more {
+  text-decoration: none;
+}
+
+.blog-entry-more-text {
+  color: var(--very-dark);
+  font-family:'Roboto', sans-serif;
+}
+
+  /********* SKILLS *********/ 
+
+.skills-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 42px;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  align-items: start;
+}
+
+.skills-section-header {
+  font-family:'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--light);
+  background-color: var(--primary);
+  height: 27px;
+  padding: 1px 2px 0 2px;
+  margin: 40px 0 0; 
+  display: inline;
+}
+
+.skills {
+  text-align: center;;
+}
+
+.skills-section-subheaders {
+  font-family:'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 29px;
+  color: var(--primary);
+  margin-top: 30px;
+} 
+
+.skills-text {
+  font-family:'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+}
+
+ /********* FOR MORE *********/ 
+
+.bottom-navbar-social-media {
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 60px;
+  justify-items: center;
+}
+
+.icon-circle  {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkedin2 {
+  width: 20px;
+}
+
+.github2 {
+  width: 26px;
+}
+
+.stackoverflow2 {
+  width: 22px;
+}
+
+.icon-text {
+  font-family:'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 18px;
+  color: var(--primary);
+}
+
+.bottom-navbar-social-media-link {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-navbar-social-media-link:link {
+  text-decoration: none;
+}
+
+.bottom-navbar-social-media-link:link:visited .icon-circle {
+  color: var(--primary);
+  background-color: var(--light);
+}
+
+.bottom-navbar-social-media-link:link:focus .icon-circle {
+  background-color: var(--light-contrast);
+}
+
+.bottom-navbar-social-media-link:link:hover .icon-circle {
+  background-color: var(--light-contrast);
+}
+
+.bottom-navbar-social-media-link:link:active .icon-circle {
+  background-color: var(--secondary);
+}
+
+  /********* FOOTER *********/ 
+.secondary-section-header.contact {
+  color: var(--light);
+}
+
+.footer {
+  font-family:'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #46203f;
+  background-color: var(--contrast);
+  text-align: center;
+}
+
+.copyright {
+  padding-top: 20px;
+}
+
+.footer-link:link {
+  color: #46203f;
+}
+
+.footer-link:visited {
+  color: #46203f;
+}
+
+.footer-link:focus {
+  color: #46203f;
+  background-color: var(--light)
+}
+
+.footer-link:hover {
+  color: #46203f;
+  background-color: var(--light)
+}
+
+.footer-link:active {
+  color: #46203f;
+  background-color: var(--secondary)
+}
+
+.contact-text {
+  font-size: 17px;
+  line-height: 25px;
+  font-family:'Montserrat', sans-serif;
+  margin-bottom: 80px;
+  color: var(--light)
+}
+
+.copyright-attributions {
+  background-color: var(--light-contrast);
+  color: var(--very-dark);
+  padding-bottom: 30px;
+}
+
+.copyright-attributions a:link {
+  color: var(--very-dark)
+}
+
+/*~~~~~~Styling for tablet and small desktop~~~~~~*/
+@media (min-width:768px) and (max-width: 1200px) {
+  body {
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--light);
+    color: var(--very-dark);
+  }
+  
+  /********* TOP SECTION *********/
+  
+  .top-section {
+    background-image: url(./assets/background-park-desktop.jpg);
+    background-size:cover;
+    background-color: var(--contrast);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 24px 0;
+  }
+}
+
+/*~~~~~~Styling for big desktop~~~~~~*/
+@media (min-width: 1200px) {
+  body {
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--light);
+    color: var(--very-dark);
+  }
+
+  /********* TOP SECTION *********/
+  
+  .top-section {
+    background-image: url(./assets/background-park-desktop.jpg);
+    background-size:cover;
+    background-color: var(--contrast);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 24px 0;
+  }
+
+    .top-navbar-social-media {
+    width: 284px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    position: relative;
+    margin-right: 410px;
+    }
+
+  .top-navbar-social-media-link  {
+    width: 80px;
+    height: 80px;
+    border: 4px solid var(--light);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+  .linkedin {
+    height: 31px;
+    width: 32px;
+  }
+
+  .github {
+    height: 36px;
+    width: 38px;
+  }
+
+  .stackoverflow {
+    height: 38px;
+    width: 36px;
+    position: relative;
+    bottom: 2px;
+  }
+
+  .top-header {
+    color: var(--light);
+    margin: 24px 0 0 410px;
+  }
+
+  .top-header-portfolio-name {
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 0.04em;
+  }
+
+  .top-header-portfolio-name-bold {
+    font-weight: 700;
+  }
+
+  .top-header-working-title {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 82px;
+    line-height: 100px;
+  }
+
+  .top-header-addition {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 78px;
+  }
+
+  .profile-picture-container {
+    width: 333px;
+    height: 333px;
+    border: 5px solid var(--light);
+    border-radius: 50%;
+    overflow: hidden;
+    align-self: flex-end;
+    position: relative;
+    top: 32px;
+    margin-right: 410px;
+  }
+
+/********* SUMMARY *********/
+  .summary-container {
+    width: 1100px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    padding: 123px 24px 110px 24px;
+  }
+
+  .start-figure {
+    width: 98px;
+    height: 20px;
+    top: 16px;
+  }
+
+  /********* TECH *********/
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 24px;
+  }
+
+  .section-header {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: var(--light);
+    background-color: var(--primary);
+    height: 58px;
+    padding: 2px 4px 0 4px;
+    margin: 120px 0 90px; 
+    display: inline;
+  }
+
+  .tech-skills-text {
+    width: 1100px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 126px;
+  }
+
+  /********* FEATURED PROJECTS *********/
+  .section-grid-container {
+    width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 54px;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: start;
+  }
+
+  /* To make entire div a clickable link */
+  .featured-project-container {
+    position: relative;
+    width: 523px;
+  }
+
+  .featured-project-image-container1 {
+    width: 523px;
+    height: 304px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .featured-project-image-container2 {
+    width: 523px;
+    height: 304px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .other-project-container {
+    width: 1100px;
+  }
+
+  .project-explanation {
+    font-family:'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 41px;
+    color: var(--primary);
+    margin-top: 45px;;
+  }
+
+  .project-text {
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  .tech-symbol {
+    font-family:'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    background-color: var(--secondary);
+    padding: 3px 5px;
+    margin: 24px 8px 0 0;
+  }
+
+  .secondary-section-header {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 47px;
+    color: var(--primary);
+    margin: 129px 0 0px
+  }
+
+/********* MY THOUGHTS *********/
+  .thoughts-container {
+    width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 54px;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: start;
+  }
+
+  .thoughts-image-container {
+    width: 523px;
+  }
+
+  .thoughts-image {
+    width: 523px;
+    object-fit: contain;
+  }
+
+  .blog-entry {
+    margin-top: 32px;
+    width: 523px;
+    position: relative;
+  }
+
+  .date {
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 41px;
+    color: var(--primary);
+  }
+
+  .blog-entry-heading {
+    font-family:'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+  }
+
+  .blog-entry-text {
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  .blog-entry-arrows {
+    color: var(--primary);
+  }
+
+  .more-thoughts {
+    margin-bottom: 40px;
+  }
+
+  .blog-entry-link-heading {
+    margin-bottom: 24px;
+  }
+
+  .blog-entry-link:link {
+    width: 523px;
+    font-family:'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    color: var(--very-dark);
+  }
+
+  .blog-entry-link-more:link {
+    width: 1100px;
+    font-family:'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    color: var(--very-dark);
+  }
+
+  .blog-entry-link:visited, .blog-entry-link-more:visited {
+    color: var(--primary);
+  }
+
+  .blog-entry-link:focus, .blog-entry-link-more:focus {
+    background-color: var(--light-contrast) ;
+  }
+
+  .blog-entry-link:hover, .blog-entry-link-more:hover {
+    background-color: var(--light-contrast) ;
+  }
+
+  .blog-entry-link:active, .blog-entry-link-more:active {
+    background-color: var(--secondary)
+  }
+  /********* MY THOUGHTS *********/
+  .skills-container {
+    width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: start;
+    
+  }
+
+  .skills-section-subheaders {
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  .skills-text {
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  /********* FOR MORE*********/
+  .bottom-navbar-social-media {
+    width: 100%;
+    height: 200px;}
+
+  .bottom-navbar-social-media-link {
+      width: 200px;
+  }
+
+  .icon-circle {
+    width: 160px;
+    height: 160px;
+  }
+
+  .linkedin2 {
+    width: 40px;
+  }
+
+  .github2 {
+    width: 52px;
+  }
+
+  .stackoverflow2 {
+    width: 44px;
+  }
+
+  .icon-text {
+    width: 300px;
+    font-size: 25px;
+    line-height: 41px;
+  }
+  /********* FOOTER*********/
+
+  .footer {
+    margin-top: 124px;
+  }
+
+  .contact {
+    margin-bottom: 100px;
+  }
+
+  .contact-text {
+    font-size: 30px;
+    line-height: 50px;
+    margin-bottom: 170px
+  }
+}
