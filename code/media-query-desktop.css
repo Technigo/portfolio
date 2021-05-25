@@ -1,0 +1,285 @@
+/*** DESKTOP ***/
+
+@media (min-width: 1200px) { 
+  /*** SUB HEADING ***/
+  .sub-headings-container {
+    padding-top: 100px;
+  }
+
+  .sub-headings-container h2 {
+    font-size: 3rem; 
+    line-height: 3.6569rem; 
+    padding: 4px 20px;
+  }
+
+
+  /*** PROJECT TAGS ***/
+  .project-tags {
+    margin-top: 28px;
+  }
+
+  .tag {
+    font-size: 1rem;
+    padding: 6px 11px;
+    margin-right: 10px;
+  }
+
+
+  /** HEADER **/
+  .header {
+    height: 90%; 
+  }
+
+  .header-container {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .social-media-top {
+    padding: 16px;
+    font-size: 2.4rem;
+    width: 2.4rem;
+    border: solid 3px var(--primary);
+    margin-right: 10px;
+  }
+
+  .headings-container {
+    margin-top: 150px;
+  }
+
+  .portfolio {
+    font-size: 1.75rem;
+  }
+  
+  .portfolio-name {
+    font-size: 1.75rem;
+  }
+  
+  .frontend {
+    font-size: 5.125rem; 
+    line-height: 6.25rem; 
+  }
+
+  .developer {
+    font-size: 5.125rem; 
+    line-height: 6.25rem; 
+    }
+  
+  .lawyer { 
+    font-size: 3.125rem; 
+    line-height: 4.875rem;
+  }
+  
+  .profile-pic-container {
+    width: 20.8125rem;
+    height: 20.8125rem;
+    top: calc(100% - calc(20.8125rem / 6 * 5));
+    border: solid 5px var(--primary);
+    right: 0;
+  }
+
+
+  /*** INTRO SECTION ***/
+  .intro-section {
+    padding: 120px 120px;
+  }
+
+  .intro-section p {
+    font-size: 1.875rem; 
+    line-height: 3.125rem; 
+  }
+
+  .intro-section-container {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .line {
+    width: 5.375rem; 
+    height: 0.1875rem; 
+    margin-bottom: 8px;
+  }
+
+  .circle {
+    width: 1.25rem; 
+    height: 1.25rem; 
+  } 
+
+
+  /*** TECH SECTION ***/
+  .tech-text {
+    padding: 120px 100px;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .tech-text p {
+    font-size: 1.875rem; 
+    line-height: 3.125rem; 
+  }
+
+
+  /*** PROJECTS SECTION ***/
+  .projects-section {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .project-cards-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .project-card {
+    padding: 100px 25px 15px 25px;
+    width: 40%;
+  }
+
+  .project-card-title {
+    top: 37%; 
+    font-size: 1.875rem;
+  }
+
+  .short-title {
+    font-size: 1.5625rem;
+    line-height: 2.5625rem;
+    padding-top: 30px;
+  }
+
+  .short-info {
+    font-size: 1.5625rem;
+    line-height: 2.5625rem;
+    padding-top: 15px;
+  }
+
+  /** Other projects **/
+  .other-projects {
+    padding: 70px 90px 70px 90px;
+  }
+
+  .other-projects h3 {
+    font-size: 2.375rem;
+    line-height: 2.9375rem;
+  }
+
+
+  /*** MY THOUGHTS SECTION ***/
+  .my-thoughts-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .my-thoughts-card {
+    padding: 80px 25px 15px 25px;
+    width: 40%;
+  }
+
+  .my-thoughts-date {
+    font-size: 1.5625rem;
+    line-height: 2.5625rem;
+    padding-top: 32px;
+  }
+
+  .my-thoughts-title {
+    font-size: 1.875rem;
+    line-height: 3rem;
+  }
+
+  .my-thoughts-summary {
+    font-size: 1.5625rem;
+    line-height: 2.5625rem;
+  }
+
+  .more-thoughts {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .more-thoughts h3 {
+    font-size: 2.375rem;
+    line-height: 2.9375rem;
+  }
+
+  .more-thoughts-link {
+    font-size: 1.5625rem;
+    line-height: 2.5625rem;
+    padding-top: 40px;
+  }
+
+
+  /*** SKILLS SECTION ***/
+  .skills-section {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .skills-container {
+    padding: 50px 0px 60px 0px;
+  }
+
+  .skills-stack {
+    width: 33%;
+  }
+
+  .skills-stack h5 {
+    font-size: 1.5625rem;
+    line-height: 2.7625rem;
+  }
+
+  .skills-stack span {
+    font-size: 1.5625rem;
+    line-height: 2.5625rem;
+  }
+
+
+  /*** FOR MORE SECTION ***/
+  .for-more-section {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .for-more-container {
+    padding: 85px 40px 85px 40px;
+  }
+
+  .for-more-social-media {
+    padding: 30px 0px 50px 0px;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .for-more-social-media span {
+    padding-top: 25px;
+  }
+
+  .social-media-bottom {
+    padding: 40px;
+    font-size: 4rem;
+    width: 4rem;
+    border: solid 4px var(--secondary);
+  }
+
+
+  /*** FOOTER ***/
+  .footer {
+    padding: 105px 0px;
+  }
+
+  .footer h2 {
+    font-size: 2.375rem;
+    line-height: 2.9375rem;
+  }
+
+  .footer p {
+    font-size: 1.875rem;
+    line-height: 3.125rem;
+  }
+}
+  
+
+
+   
