@@ -1,0 +1,482 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 24px;
+    color: #000000;
+    margin: 0 auto;
+    font-family: Montserrat;
+}
+
+.header {
+    position: relative;
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+}
+.header-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+}
+.header-nav-container{
+    position: absolute;
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    top: 48px;
+    text-align: right;    
+}       
+
+.social-media-tag {
+    width: 50px;
+    margin: 5px;
+    opacity: 0.9;
+    
+}
+
+.profil-pics {
+    position: absolute;
+    top: 356px;
+    right: 5%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: white solid 3px;
+    border-radius: 50%;
+}
+
+.header-text {
+    width: 90%;
+    max-width: 1100px;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+
+.name {
+    font-weight: 350;
+    line-height: 18px;
+    text-shadow: 2px 2px 2px rgb(71, 71, 101);
+}
+
+.background-color {
+    background-color: cornsilk;
+}
+
+.intro-text-line {
+    width: 50px;
+    height: 3px;
+    background: coral;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.intro-text-circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: coral;
+    display: inline-block;
+    margin-left: -5px;
+    margin-right: 10px;
+}
+
+.title-text {
+    margin: 0;
+    font-weight: 700;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px rgb(101, 101, 147);
+
+}
+
+.secound-title-text { 
+    font-weight: 450;
+    font-size: 24px;
+    line-height: 12px;
+    text-shadow: 2px 2px 2px rgb(101, 101, 147);
+
+}
+.main-wrapper {
+    padding-top: 569px;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1100px;
+
+}
+
+.intro-text {
+    width: 90%;
+    margin: 0 auto;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 29px;
+    text-align: left; 
+}
+
+.tech-container {
+    margin: 0 auto;
+    width: 90%;
+    font-size: 17px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.tech_span {
+    font-weight: 500;
+    color: coral;
+}
+
+
+.tech-headline,
+.first-headline {
+    color:white;
+    background: coral;
+    padding: 3px 15px; 
+    margin: 30px 0 30px 0; 
+}
+
+.tech-headline,
+.first-headline,
+.secound-headline {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    font: bold 'Montserrat', sans-serif;
+    font-size: 22px;
+    letter-spacing: 0;
+}
+
+
+
+.secound-headline{
+    color: coral;
+    width: 100%;
+    margin: 30px 0 20px 0;
+}
+
+.two-column-container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.tech-tag-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tech-tag {
+    font-size: 16px;
+    margin: 0 5px 30px;
+    background-color: rgb(250, 206, 190);
+    padding: 2px 4px 2px 4px;
+}
+
+.project-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1100px;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.two-column {
+    width: 100%;
+
+    cursor: pointer;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.article-link {
+    text-decoration: none;
+    color: black;
+}
+.project-image-container {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    height: 212px;
+    
+}
+
+.project-image_hidden {
+    display: none;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text-ontop-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.project-image-text-ontop {
+    color: white;
+    text-shadow: gray 1px 1px 1px;
+    font-family:'Montserrat';
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+    opacity: 0.4;
+    
+}
+
+.project-image-text-ontop:hover {
+    opacity: 0.9;
+    transition: 0.3s ease;
+}
+
+
+.project-text {
+    font: 17px 'Roboto';
+    letter-spacing: 0;
+    line-height: 29px;
+    width: 100%;
+}
+
+.project-text:hover {
+    text-decoration: underline;
+    transition: 0.5s ease;
+}
+
+.project-span {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: coral;
+}
+
+.backgroud-color{
+    background-color: azure;
+}
+
+.other-projects-text-only {
+    text-align: left;
+}
+
+.thoughts-date-heading {
+    font: 17px 'Roboto',
+    sans-serif;
+    color: rgb(245, 181, 158);
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 5px;
+}
+
+/* Solution to make the My Thoughts headline stay in place */
+.center-headline {
+    width: 100%;
+    display: block;
+}
+
+.thoughts-heading {
+    color: black;
+    font: bold 17px 'Roboto',
+    sans-serif;
+    letter-spacing: 0;
+    margin: 0;
+}
+.thoughts-text {
+    display: block;
+    font: 17px 'Roboto',
+    sans-serif;
+    margin: 0;
+    padding-top: 5px;
+}
+
+
+.more-thoughts-container {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+.more-thoughts-text {
+    font: 17px 'Roboto',
+    sans-serif;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1100px;
+    font-size: 17px;
+    font-family: Roboto;
+    line-height: 29px;
+    flex-direction: column;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+h4 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: coral;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    justify-content: left;
+    padding: 0;
+}
+
+.footer-nav-container {
+    width: 100%;
+    max-width: 1100px;
+    align-content: space-around;
+}
+
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    background: coral;
+    color: white;
+    text-align: center;
+    font-size: 21px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    line-height: 12px;
+}
+
+/*** MEDIA QUERIES ***/
+@media (max-width: 767px){
+    .hide {
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+
+    .hide-desktop {
+        display: none;
+    }
+
+    .header-img{
+        height: 681px;
+    }
+    
+    .intro-text {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .header-text {
+        font-size: 24px;
+    }
+
+    .title-text {
+        font-size: 50px;
+        
+    }
+
+    .secound-title-text {
+        font-size: 30px;
+    }
+
+    .main-wrapper {
+        padding-top: 700px;
+        width: 100%;
+    }
+
+
+    .profil-pics {
+        top: 440px;
+        width: 270px;
+        height: 270px;
+        margin-right: 5%;
+    }
+
+    .project-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    .project-image-container {
+        height: 306px;
+
+    }
+    
+    .two-column {
+        width: 45%;  
+    }
+    
+    .other-projects-text-only .project-text {
+        text-decoration: underline; 
+    }
+    .first-headline {
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 56px;
+    }
+    .skills-container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;  
+    }
+
+    ul {
+        width: 30%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .header-text {
+        font-size: 28px;
+    }
+    .title-text {
+        font-size: 60px;
+    }
+
+    .secound-title-text {
+        font-size: 40px;
+    }
+    .profil-pics {
+        top: 380px;
+        margin-right: 15%;
+        width: 333px;
+        height: 333px;
+        
+    }
+}
