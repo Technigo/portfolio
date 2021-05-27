@@ -1,0 +1,711 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    color: #000;
+}
+
+/* Header */
+
+.header {
+    height: 440px;
+    position: relative;
+    background-color: #000;
+}
+
+.header-image {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 440px;
+    top: 0;  
+    filter: grayscale(100%);
+    opacity: 0.1;
+}
+
+.header-container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 120px;
+    left: 24px;
+    max-width: 607px;
+    font-family: "Montserrat";
+    color: white;
+}
+
+.title-name {
+    margin: 0px;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+}
+
+.title-name .portfolio {
+    font-weight: 100;
+}
+
+.title-big {
+    font-size: 40px;
+    margin: 0;
+}
+
+.title-plus {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Section for links to my profiles */
+
+.social-media-nav {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 40px;
+    right: 24px;
+}
+
+.social-media-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 5px;
+    padding: 3px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.social-media-button:hover,
+.social-media-button:focus {
+    color: white;
+    border-color:#ffa258;
+    background-color: #ffa258;
+    opacity: 1;
+}
+
+
+/* My image */
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: absolute;
+    right: 6%;
+    bottom: -4%;
+}
+
+/* Section with information about me */
+
+.info-about-me {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 24px 40px 24px;
+}
+
+/* start-figure */
+
+.line {
+    width: 55px;
+    border-bottom: 2px solid #ffa258;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    background-color: #ffa258;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.paragraph {
+    font-size: 18px;
+    line-height: 29px;
+}
+
+/* Section with my tech-skills */
+
+.tech-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.highlight-tech {
+    font-weight: 700;
+    color:#ffa258;
+}
+
+/* Top title in every section */
+
+.section-header {
+    font-family: "Montserrat", sans-serif;
+    background-color: #000;
+    color: white;
+    padding: 5px 15px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* Section with my featured projects, and some classes for thought section (that share the same properties) */
+
+.projects-container {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 40px 10px;
+}
+
+.featured-projects, .all-thoughts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-card, .thoughts-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+.project-link, .thoughts-link {
+    text-decoration: none;
+    color: #000;
+    outline: none;
+    padding: 5px;
+}
+
+.thoughts-link:hover {
+    opacity: 0.8;
+}
+
+.project-link:focus, .thoughts-link:focus {
+    border: 3px solid #000;
+}
+
+/* Project image container with image on top */
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.project-image {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.image-text {
+    position: absolute;
+    margin: 0;
+    font-size: 28px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.01em;
+}
+
+.image-container:hover {
+    background-color: #000;
+    transition: background-color .4s;
+}
+
+.image-container:hover .project-image {
+    opacity: 0;
+}
+
+/* Information about project under image */
+
+.project-title {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.project-paragraph, .thought-paragraph {
+    font-size: 18px;
+    margin: 0px 0px 5px 0px;
+    line-height: 29px;
+}
+
+.used-tech-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.used-tech {
+    background-color: #ffa258;
+    color: white;
+    padding: 5px;
+    margin: 0px 5px 0px 0px;
+    font-size: 11px;
+    line-height: 11px;
+}
+
+
+/* Section with my other projects, and some classes for thought section (that share the same properties) */
+
+.other-projects-section {
+    width: 100%;
+}
+
+.other-projects, .other-thoughts {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    padding: 5px;
+}
+
+.other-projects-link, .other-thoughts-link {
+    text-decoration: none;
+    outline: none;
+    color: #000;
+}
+
+.other-projects-link:hover, .other-thoughts-link:hover {
+    opacity: 0.7;
+}
+
+.other-projects-link:focus, .other-thoughts-link:focus {
+    border: 3px solid #000;
+    padding: 5px;   
+}
+
+.other-projects-title, .other-thoughts-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 21px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.title-info {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0;
+}
+
+.other-projects-info {
+    margin: 0px 0px 5px 0px;
+    line-height: 29px;
+}
+
+.fa-angle-double-right {
+    margin-left: 5px;  
+    color: #ffa258;
+}
+
+/* Section with my thoughts about code */
+
+.thoughts-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 10px;
+}
+
+.hide-title {
+    display: none;
+}
+
+.thoughts-card:hover {
+    opacity: 0.8;
+}
+
+.thought-image {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.thought-date {
+    margin-bottom: 0;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.thought-title {
+    font-size: 22px;
+    margin: 5px 0;
+    font-weight: 700;
+}
+
+.other-thoughts-info {
+    text-decoration: underline;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* Section with my skills */
+
+.skills-container {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 10px;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+    
+}
+
+.skills {
+    padding: 20px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.skill-title {
+    font-weight: 700;
+    margin: 5px;
+    font-size: 17px;
+    color: #000;
+}
+
+.skill {
+    line-height: 29px;
+    font-size: 17px;
+}
+
+.hide-skill {
+    display: none;
+}
+
+/* Section with links to my profiles */
+
+.for-more-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 10px;
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: center;
+}
+
+.link-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialmedia-text {
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+}
+
+.social-media-button-big {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 3px solid #000;
+    margin: 20px 15px 5px 15px;
+    cursor: pointer;
+    color: #000;
+    outline: none;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.social-media-button-big:hover,
+.social-media-button-big:focus {
+    color: white;
+    background-color: #000;
+    border-color: #000;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #ffa258;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0px 80px 0px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact-title {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.contact-info {
+    margin: 5px;
+    font-size: 21px;
+}
+
+a[href^="mailto:"], a[href^="tel:"] {
+    color: white;
+    outline: none;
+}
+
+a[href^="mailto:"]:hover, a[href^="tel:"]:hover {
+    color: #4b125c;
+}
+
+a[href^="mailto:"]:focus, a[href^="tel:"]:focus {
+    color: #4b125c;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    * {
+        box-sizing: unset;
+    }
+    
+    .header {
+        height: 680px;
+    }
+
+    .header-image {
+        height: 680px;
+    }
+
+    .header-container-text {
+        left: 40px;
+        top: 150px;
+    }
+
+    .title-name {
+        font-size: 28px;
+    }
+
+    .title-big {
+        font-size: 82px;
+    }
+
+    .title-plus {
+        font-size: 50px;
+    }
+
+    .social-media-nav {
+        top: 40px;
+        right: 40px;
+    }
+
+    .social-media-button {
+        height: 70px;
+        width: 70px;
+        font-size: 36px;
+        border: 3px solid white;
+    }
+
+    .profile-pic {
+        width: 250px;
+        height: 250px;
+        right: 100px;
+    }
+
+    .paragraph {
+        width: 70%;
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .line {
+        width: 98px;
+        border-bottom: 3px solid #ffa258;
+        margin-bottom: 8px;
+    }
+    
+    .circle {
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+    }
+
+    .featured-projects, .all-thoughts {
+        width: 85%;
+    }
+
+    .section-header {
+        font-size: 48px;
+    }
+
+    .project-card, .thoughts-card {
+        width: 48%;
+    }
+
+    .project-image {
+        height: 250px;
+    }
+
+    .project-title, .project-paragraph, .thought-paragraph {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .used-tech, .used-pair {
+        font-size: 16px;
+        margin-top: 12px;
+        line-height: 21px;
+    }
+
+    .other-projects-section {
+        justify-content: flex-start;
+        width: 85%;
+        margin-top: 40px;
+    }
+
+    .other-projects-title, .other-thoughts-title {
+        font-size: 38px;
+    }
+
+    .title-info, .other-projects-info {
+        font-size: 25px;
+    }
+
+    .thought-image {
+        height: 350px;
+    }
+
+    .thought-date {
+        font-size: 25px;
+    }
+
+    .thought-title {
+        font-size: 30px;
+    }
+
+    .other-thoughts-info {
+        font-size: 25px;
+        line-height: 33px;
+    }
+
+    .skills {
+        padding: 0px 60px;
+    }
+
+    .skill-title, .skill {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .social-media-button-big {
+        font-size: 60px;
+        width: 160px;
+        height: 160px;
+        margin: 20px 30px 5px 30px;
+    }
+
+    .socialmedia-text {
+        font-size: 25px;
+    }
+
+    .footer {
+        height: 490px;
+    }
+
+    .contact-info {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-container-text {
+        left: 13%;
+        top: 200px;
+    }
+
+    .social-media-nav {
+        top: 100px;
+        right: 13%;
+    }
+
+    .profile-pic {
+        width: 333px;
+        height: 333px;
+        top: 379px;
+        right: 13%;
+    }
+
+    .info-about-me {
+        padding: 123px 0px 109px 0px;
+    }
+
+    .paragraph {
+        width: 60%;
+    }
+    
+    .featured-projects, .all-thoughts, .other-projects-section {
+        width: 70%;
+    }
+
+    .project-image {
+        height: 320px;
+    }
+
+    .title-info, .other-projects-info {
+        display: inline-block;
+        text-decoration: underline;
+    }
+
+    .skills-section {
+        justify-content: center;
+    }
+
+    .hide-title {
+        display: inline-block;
+    }
+
+    .hide-skill {
+        display: block;
+    }
+
+}
