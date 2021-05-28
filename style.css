@@ -1,0 +1,600 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.header-elements {
+    height: 70vh;
+}
+
+.hero-image {
+    height: 70vh;
+    width: 100vw;
+    object-fit: cover;
+    position: relative;
+    color: white;
+}
+
+.social-media-icons-header {
+    position: absolute;
+    top: 48px;
+    right: 24px;
+}
+
+.social-media-icons-header a {
+    text-decoration: none;
+}
+
+.social-media-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.header-name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    position: absolute;
+    color: white;
+    top: 120px;
+    left: 24px;
+    font-size: 13px;
+}
+
+.andrea-name-header {
+    font-weight: bold;
+}
+
+.header-job-title {
+    position: absolute;
+    top: 150px;
+    left: 24px;
+    font-size: x-large;
+    color: white;
+}
+
+h2 {
+    margin: 5px 0px;
+}
+
+.my-photo {
+    position: absolute;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    bottom: 25%;
+    right: 7%;
+}
+
+.main {
+    width: 100vw;
+}
+
+.intro-section {
+    background-color: #efefe7;
+    height: 320px;
+    font-size: 17px;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.intro-section-about-me {
+    display: none;
+}
+
+.intro-section p {
+    margin: 0 auto;
+    width: 80%;
+    color: black;
+}
+
+.intro-line {
+    display: inline-block;
+    width: 40px;
+    height: 4px;
+    border-top: 3px solid #f2a154;
+}
+
+.intro-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border: 2px solid #f2a154;
+    background-color: #f2a154;
+    margin-right: 15px;
+    margin-left: -5px;
+    border-radius: 50%;
+}
+
+.tech-section {
+    height: 270px;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.tech-title {
+    background-color: #314e52;
+    color: white;
+    display: inline-block;
+    padding: 8px;
+}
+
+.tech-section-text {
+    color: black;
+    margin: 0 20%;
+}
+
+.highlight {
+    color: #f2a154;
+    font-weight: bold;
+}
+
+.featured-projects-section {
+    background-color: #efefe7;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.featured-projects-title {
+    background-color: #314e52;
+    color: white;
+    display: inline-block;
+    padding: 8px;
+    font-size: 25px;
+    margin-top: 60px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-container a {
+    text-decoration: none;
+    width: 100%;
+}
+
+.project-card {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: start;
+    margin: 30px 40px;
+}
+
+.project-img-text {
+    position: relative;
+    text-align: center;
+}
+
+.project-card img {
+    height: 270px;
+    width: auto;
+    object-fit: cover;
+    filter: grayscale(60%);
+}
+
+.project-card h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    font-size: 28px;
+    color: #f2a154;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.arrow-link {
+    color: #f2a154;
+}
+
+h3 {
+    color: #314e52;
+}
+
+.tags-container p {
+    background-color: #f2a154;
+    color: black;
+    font-size: 10px;
+    padding: 5px;
+    margin-right: 13px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.other-projects-section {
+    margin: 0px 40px;
+}
+
+.other-projects-section a {
+    text-decoration: none;
+    width: 100%;
+}
+
+.other-projects-title {
+    color: #314e52;
+}
+
+.other-projects-card {
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.my-thoughts-section {
+    text-align: center;
+    margin: 0px 40px;
+    padding-bottom: 30px;
+}
+
+.my-thoughts-title {
+    background-color: #314e52;
+    color: white;
+    display: inline-block;
+    padding: 8px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.my-thoughts-container {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.my-thoughts-container a {
+    text-decoration: none;
+}
+
+.my-thoughts-card {
+    color: black;
+}
+
+.my-thoughts-text-container{
+    text-align: start;
+}
+
+.my-thoughts-section img {
+    width: auto;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.more-thoughts-section {
+    text-align: center;
+    margin: 0px 40px;
+}
+
+.more-thoughts-title {
+    color: #314e52;
+}
+
+.more-thoughts-text a {
+    text-decoration: none;
+    color: black;
+}
+
+.thoughts-date {
+    font-weight: lighter;
+}
+
+.more-thoughts-text {
+    text-align: start;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.skills-section {
+    background-color: #efefe7;
+    color: #314e52;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.skills-title {
+    background-color: #314e52;
+    color: white;
+    display: inline-block;
+    padding: 8px;
+    margin: 60px;
+}
+
+.skills-list-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    font-size: 17px;
+}
+
+.skill-list div {
+    margin: 0px 30px;
+}
+
+.skill-list h2 {
+    color: #f2a154;
+    font-size: 17px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.for-more-section {
+    text-align: center;
+    margin: auto;
+}
+
+.for-more-title {
+    background-color: #314e52;
+    color: white;
+    display: inline-block;
+    padding: 8px;
+    margin-top: 60px;
+}
+
+.social-media-icons-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icons-bottom img {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.social-media-icons-bottom a {
+    color: #f2a154;
+    text-decoration: none;
+    margin: 10px
+}
+
+.contact-section {
+    background-color: #314e52;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 20px;
+}
+
+/*MEDIA QUERIES TABLET*/
+@media (min-width: 768px) {
+
+    .header-elements {
+        height: 60vh;
+    }
+
+    .hero-image {
+        height: 60vh;
+       
+    }
+
+    .social-media-icons-header {
+        top: 82px;
+        right: 80px;
+    }
+
+    .social-media-icons img {
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+    }
+
+    .header-name {
+        top: 170px;
+        font-size: 20px;
+        left: 100px;
+    }
+
+    .header-job-title {
+        top: 230px;
+        left: 100px;
+        font-size: 40px;
+    }
+
+    .my-photo {
+        width: 250px;
+        height: 250px;
+        bottom: 37%;
+        right: 12%;
+    }
+
+    .project-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+    
+    .project-container a {
+        width: 50%;
+    }
+
+    .project-card {
+        margin: 40px;
+        margin-bottom: 50px;
+    }
+
+    .my-thoughts-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+/*MEDIA QUERIES DESKTOP*/
+@media (min-width: 1024px) {
+
+    body {
+        font-size: 20px;
+    }
+
+    .header-elements {
+        height: 80vh;
+    }
+
+    .hero-image {
+        height: 80vh;
+    }
+
+    .social-media-icons-header {
+        top: 82px;
+        right: 100px;
+    }
+
+    .social-media-icons img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header-name {
+        font-size: 28px;
+        left: 100px;
+    }
+
+    .header-job-title {
+        top: 240px;
+        left: 100px;
+        font-size: 60px;
+    }
+
+    .my-photo {
+        width: 333px;
+        height: 333px;
+        bottom: 16%;
+        right: 6%;
+    }
+
+
+    .intro-section {
+        font-size: 20px;
+    }
+
+    .intro-section p {
+        width: 60%;
+    }
+
+    .intro-line {
+        width: 60px;
+        height: 8px;
+        border-top: 4px solid #f2a154;
+    }
+
+    .intro-dot {
+        width: 9px;
+        height: 9px;
+        border: 6px solid #f2a154;
+        margin-left: -8px;
+    }
+
+    .tech-section {
+        height: 320px;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .featured-projects-title {
+        font-size: 30px;
+    }
+
+    .project-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        margin: 0 14%;
+    }
+
+    .project-card {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .project-container a {
+        width: 50%;
+    }
+
+
+    .project-img-text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-card img {
+        height: 320px;
+    }
+
+    .tags-container p {
+        font-size: 17px;
+    }
+
+    .other-projects-container {
+        margin: 0 15%;
+    }
+
+    .my-thoughts-section {
+        margin: 0 15%;
+    }
+
+    .my-thoughts-card img {
+        width: auto;
+        height: 350px;
+    }
+
+    .more-thoughts-section {
+        margin: 0 15%;
+    }
+
+    .skill-list {
+        font-size: 20px;
+    }
+
+    .skill-list h2 {
+        font-size: 20px;
+    }
+
+    .social-media-icons-bottom img {
+        width: 160px;
+        height: 160px;
+        margin: 10px;
+    }
+}
