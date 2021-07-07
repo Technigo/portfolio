@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felicias portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/bb772df1af.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+    <!-- HEADER -->
+    <header>
+        <div class="media-icon-container">
+            <a class="media-icon" href="https://www.linkedin.com/in/felicia-liabäck-löwstett-2458488b"
+                title="Link to LinkedIn" aria-label="link to LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a class="media-icon" href="https://github.com/liaback-lowstett" title="Link to GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a class="media-icon" href="" title="Link to Stack Overflow">
+                <i class="fab fa-stack-overflow"></i>
+            </a>
+        </div>
+        <picture class="hero-image-container">
+            <source srcset="./assets/hero_mobile.jpg" media="(max-width:767px)">
+            <img class="hero-image" src="./assets/hero_desktop.jpg" alt="background image of somone typing">
+        </picture>
+        <section class="header-text-container">
+            <p class="header-paragraph">
+                PORTFOLIO: <b>FELICIA LIABÄCK LÖWSTETT</b>
+            </p>
+            <h1 class="header-heading-1">
+                frontend developer
+            </h1>
+            <h2 class="header-heading-2">
+                + digital designer
+            </h2>
+        </section>
+    </header>
+    <!-- MAIN CONTENT OF THE PORTFOLIO -->
+    <main class="main">
+        <!-- PROFILE  -->
+        <section class="profile-container">
+            <img class="profile-image" src="assets/selfie.JPG" alt="Profile picture of Felicia">
+            <p class="profile-paragraph">
+                Hi,I am Felicia Liabäck Löwstett. I am a frontend developer and digital designer currently based 
+                in Stockholm/ Copenhagen working on visual identities and developing web sites. I have worked as 
+                a freelance designer for 1,5 years and developed several single-page applications using React, 
+                TypeScript JSX and SASS.
+            </p>
+        </section>
+        <!-- TECH -->
+        <section class="tech-container">
+            <h2 class="heading-2">
+                TECH
+            </h2>
+            <p class="tech-paragraph">
+                HTML, CSS, Sass, Styled components, <span class="tech-paragraph-emp">JavaScript</span>, ES6, JSX, <span
+                class="tech-paragraph-emp">React</span>, Hooks, <span class="tech-paragraph-emp">Redux</span>,
+                Node.js, MongoDB, Web Accessibly, <span class="tech-paragraph-emp">Responsive Design</span>, 
+                API:s, Cross-browser Testing.
+            </p>
+        </section>
+        <!--  PROJECTS -->
+        <section class="project-container">
+            <h2 class="heading-2">
+                FEATURED PROJECTS
+            </h2>
+            <div class="card-container">
+                <!-- ALOBA -->
+                <div class="card">
+                    <a href="https://www.alobafoods.com/" target="_blank">
+                        <div class="card-image-container">
+                            <img class="card-image" src="assets/aloba.jpg" alt="">
+                            <div class="card-image-overlay"></div>
+                            <p class="card-image-text-overlay">ALOBA FOOD</p>
+                        </div>
+                    </a>
+                    <div class="card-text-container">
+                        <h4 class="heading-4">A SINGLE PAGE APPLICATION </h4>
+                        <p class="card-paragraph"> 
+                            Aloba is a completely new food product made from oats, barley and algae 
+                            - good for both you and the planet. Its a single-page applications 
+                            developed using React, TypeScript, JSX and CSS. 
+                        </p>
+                        <ul class="card-list-container">
+                            <li class="card-tech-list">SASS</li>
+                            <li class="card-tech-list">JSX</li>
+                            <li class="card-tech-list">TYPESCRIPT</li>
+                            <li class="card-tech-list">HEADLESS CMS</li>
+                            <li class="card-tech-list">UX/UI</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- LUMENT -->
+                <div class="card">
+                    <a href="https://www.lumentab.com/" target="_blank">
+                        <div class="card-image-container">
+                            <img class="card-image" src="assets/lab.jpg" alt="">
+                            <div class="card-image-overlay"></div>
+                            <p class="card-image-text-overlay">LUMENT</p>
+                        </div>
+                    </a>
+                    <div class="card-text-container">
+                        <h4 class="heading-4">A SINGLE PAGE APPLICATION </h4>
+                        <p class="card-paragraph"> 
+                            The Lumentin® concept renders perfect negative contrast in CT-examinations of the 
+                            small intestine formerly only possible with MR imaging. Its a single-page applications 
+                            developed using, TypeScript, JSX and CSS. 
+                        </p>
+                        <ul class="card-list-container">
+                            <li class="card-tech-list">SASS</li>
+                            <li class="card-tech-list">JSX</li>
+                            <li class="card-tech-list">TYPESCRIPT</li>
+                            <li class="card-tech-list">HEADLESS CMS</li>
+                            <li class="card-tech-list">UX/UI</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- FINAL PROJECT -->
+                <div class="card">
+                    <a href="https://todo-collab-app.netlify.app/" target="_blank">
+                        <div class="card-image-container">
+                            <img class="card-image" src="assets/todo.jpg" alt="">
+                            <div class="card-image-overlay"></div>
+                            <p class="card-image-text-overlay">TODO FULLSTACK APPLICATION</p>
+                        </div>
+                    </a>
+                    <div class="card-text-container">
+                        <h4 class="heading-4">FULLSTACK APPLICATION </h4>
+                        <p class="card-paragraph"> 
+                            This todo app is a fullstack application
+                            developed using React, Redux, Node.js, Mongoose, MongoDB. 
+                        </p>
+                        <ul class="card-list-container">
+                            <li class="card-tech-list">REACT</li>
+                            <li class="card-tech-list">REDUX</li>
+                            <li class="card-tech-list">SASS</li>
+                            <li class="card-tech-list">NODE.JS</li>
+                            <li class="card-tech-list">MONGOOSE</li>
+                            <li class="card-tech-list">MONGODB</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="https://weather-app-stockholm.netlify.app" target="_blank"> 
+                        <div class="card-image-container">
+                            <img class="card-image" src="assets/weather.jpg" alt="">
+                            <div class="card-image-overlay"></div>
+                            <p class="card-image-text-overlay">WEATHER APP</p>
+                        </div>
+                    </a>
+                    <div class="card-text-container">
+                        <h4 class="heading-4">A WEATHER APP BUILT IN JAVASCRIPT. </h4>
+                        <p class="card-paragraph">
+                            In  this project, we have built a responsvie weather web app that shows 
+                            today's weather and temperature, and a 5-day forecast using a weather API.
+                        </p>
+                        <ul class="card-list-container">
+                            <li class="card-tech-list">HTML</li>
+                            <li class="card-tech-list">CSS</li>
+                            <li class="card-tech-list">JAVASCRIPT</li>
+                            <li class="card-tech-list">UI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- OTHER PROJECTS -->
+            <h3 class="heading-3">
+                OTHER PROJECTS
+            </h3>
+            <div class="other-project-container">
+                <a
+                    href="https://tech-maze-o.netlify.app" target="_blank">
+                    <h4 class="other-project-heading-4"> LABYRINTH GAME.</h4>
+                    <p class="other-project-paragraph">A game which allows players to navigate a maze, in the form of a text-based adventure, provided by a backend. </p>
+                </a>
+                <ul class="project-list-container">
+                    <li class="project-tech-list">REACT</li>
+                    <li class="project-tech-list">REDUX</li>
+                    <li class="project-tech-list">RESTFUL API</li>
+                </ul>
+            </div>
+            <div class="other-project-container">
+                <a
+                    href="https://happy-thoughts-fll.netlify.app" target="_blank">
+                    <h4 class="other-project-heading-4">HAPPY THOUGHTS.</h4>
+                    <p class="other-project-paragraph">A twitter-like page where the user can post happy thoughts. </p>
+                </a>
+                <ul class="project-list-container">
+                    <li class="project-tech-list">REACT</li>
+                    <li class="project-tech-list">JSX</li>
+                    <li class="project-tech-list">CSS</li>
+                    <li class="project-tech-list">EXPRESS</li>
+                    <li class="project-tech-list">MONGODB</li>
+                    <li class="project-tech-list">API</li>
+                </ul>
+            </div>
+            <div class="other-project-container">
+                <a
+                    href="https://good-news-fll.netlify.app" target="_blank">
+                    <h4 class="other-project-heading-4">NEWS SITE. </h4>
+                    <p class="other-project-paragraph">Responsive news site using HTML and CSS. </p>
+                </a>
+                <ul class="project-list-container">
+                    <li class="project-tech-list">HTML</li>
+                    <li class="project-tech-list">CSS</li>
+                    <li class="project-tech-list">UI DESIGN</li>
+                </ul>
+            </div>
+            <div class="other-project-container">
+                <a href="https://shutter-speed-fll.netlify.app" target="_blank">
+                    <h4 class="other-project-heading-4">BUSINESS SITE. </h4>
+                    <p class="other-project-paragraph">Responsive business site using HTML and CSS.</p>
+                </a>
+                <ul class="project-list-container">
+                    <li class="project-tech-list">HTML</li>
+                    <li class="project-tech-list">CSS</li>
+                    <li class="project-tech-list">UI DESIGN</li>
+                </ul>
+            </div>
+        </section>
+        <!-- MY THOUGHTS -->
+        <!-- <section class="thoughts-container">
+            <h2 class="heading-2">
+                MY THOUGHTS
+            </h2>
+            <div class="article-container">
+                <article class="article">
+                    <img class="article-image" src="assets/code.jpg" alt="">
+                    <div class="article-text-container">
+                        <time class="date" datetime="2021-03">April 2021</time>
+                        <h4 class="heading-4">Coming soon </h4>
+                        <p class="article-paragraph">
+                            Ultrices adipiscing suspendisse a nisl consectetur. Sem viverra
+                            vitae, ut quisque eu. Tincidunt in dui tincidunt cras laoreet.
+                            Quam lectus gravida quis dolor fames nec neque.Facilisis nunc
+                            volutpat convallis nec scelerisque feugiat maecenas ut.
+                            <a class="article-link" href="">Read whole article here. </a>
+                        </p>
+                    </div>
+                </article>
+                <article class="article">
+                    <img class="article-image" src="assets/design.jpg" alt="">
+                    <div class="article-text-container">
+                        <time class="date" datetime="2021-03">April 2021</time>
+                        <h4 class="heading-4">Coming soon </h4>
+                        <p class="article-paragraph">
+                            Urna, porttitor augue in nibh adipiscing faucibus. Morbi eu
+                            accumsan proin nunc, lectus libero sed. Est ornare imperdiet
+                            posuere sagittis. Sed dui suspendisse malesuada mi blandit
+                            pulvinar. Maecenas nulla tincidunt ut sed.
+                            <a class="article-link" href="">Read whole article here. </a>
+                        </p>
+                    </div>
+                </article>
+            </div> -->
+            <!-- MORE THOUGHTS  -->
+            <!-- <h3 class="heading-3">
+                MORE THOUGHTS
+            </h3>
+            <div class="more-thoughts-container">
+                <a class="article-link" href="" title="Link to article">
+                    <p class="article-paragraph">
+                        <time class="date" datetime="2021-03">Mars 2021</time>
+                        Come up with a great title.
+                    </p>
+                </a>
+                <a class="article-link" href="" title="Link to article">
+                    <p class="article-paragraph">
+                        <time class="date" datetime="2021-03">Mars 2021</time>
+                        Come up with a great title.
+                    </p>
+                </a>
+            </div> -->
+        </section>
+        <!-- SKILLS -->
+        <section class="skills-container">
+            <h2 class="heading-2">
+                SKILLS
+            </h2>
+            <div class="skills-list-container">
+                <div class="skills-list-container-code">
+                    <h3 class="heading-3" >CODE</h3>
+                    <ul class="skills-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Sass</li>
+                        <li>JavaScript ES6</li>
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+                <div class="skills-list-container-toolbox">
+                    <h3 class="heading-3" >TOOLBOX</h3>
+                    <ul class="skills-list">
+                        <li>Figma</li>
+                        <li>Sketch</li>
+                        <li>Adobe XD</li>
+                        <li>Illustrator</li>
+                        <li>Indesign</li>
+                        <li>Photoshop</li>
+                    </ul>
+                </div>
+                <div class="skills-list-container-more" > 
+                    <h3 class="heading-3">MORE</h3>
+                    <ul class="skills-list">
+                        <li>UX/UI design</li>
+                        <li>Visual identity</li>
+                        <li>Concept development</li>
+                        <li>Agile methodology</li>
+                        <li>Scrum</li>
+                        <li>Project managment</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- MORE -->
+        <section class="link-container">
+            <h2 class="heading-2">
+                FOR MORE
+            </h2>
+            <div class="links">
+                <a class="link-media-icon" href="https://www.linkedin.com/in/felicia-liabäck-löwstett-2458488b"
+                    title="Link to LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="link-media-icon" href="https://github.com/liaback-lowstett" title="Link to GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a class="link-media-icon" href="" title="Link to Stack Overflow">
+                    <i class="fab fa-stack-overflow"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- CONTACT -->
+    <footer class="footer">
+        <h2 class="footer-header">CONTACT</h2>
+        <p class="footer-paragraph">Felicia Liabäck Löwstett</p>
+        <p class="footer-paragraph">felicia.liaback@gmail.com</p>
+        <p class="footer-paragraph">070/7970142</p>
+
+    </footer>
+</body>
+
+</html>
